@@ -1,0 +1,75 @@
+{
+    "name": "Proyecto UI Vue3",
+    "type": "document",
+    "children": [
+      {
+        "name": "Pantalla de Inicio de Sesión",
+        "type": "frame",
+        "width": 1440,
+        "height": 900,
+        "children": [
+          { "name": "Formulario de Login", "type": "group" },
+          { "name": "Botón de Registro", "type": "button" }
+        ]
+      },
+      {
+        "name": "Dashboard",
+        "type": "frame",
+        "width": 1440,
+        "height": 900,
+        "children": [
+          { "name": "Resumen Financiero", "type": "group" },
+          { "name": "Gráficos", "type": "group" }
+        ]
+      },
+      {
+        "name": "Gestión de Transacciones",
+        "type": "frame",
+        "width": 1440,
+        "height": 900,
+        "children": [
+          { "name": "Lista de Transacciones", "type": "group" },
+          { "name": "Formulario de Nueva Transacción", "type": "group" }
+        ]
+      },
+      {
+        "name": "Presupuestos",
+        "type": "frame",
+        "width": 1440,
+        "height": 900,
+        "children": [
+          { "name": "Lista de Presupuestos", "type": "group" },
+          { "name": "Formulario de Presupuesto", "type": "group" }
+        ]
+      },
+      {
+        "name": "Reportes",
+        "type": "frame",
+        "width": 1440,
+        "height": 900,
+        "children": [
+          { "name": "Generación de Reportes", "type": "group" },
+          { "name": "Lista de Reportes", "type": "group" }
+        ]
+      },
+      {
+        "name": "Notificaciones y Alertas",
+        "type": "frame",
+        "width": 1440,
+        "height": 900,
+        "children": [
+          { "name": "Lista de Notificaciones", "type": "group" }
+        ]
+      },
+      {
+        "name": "Exportaciones",
+        "type": "frame",
+        "width": 1440,
+        "height": 900,
+        "children": [
+          { "name": "Opciones de Exportación", "type": "group" }
+        ]
+      }
+    ]
+  }
+  

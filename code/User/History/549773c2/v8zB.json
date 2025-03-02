@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Low Eye Strain Neon",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontSize": 20,
+    "files.autoSave": "afterDelay",
+    "editor.fontFamily": "'Monaspace Neon', monospace",
+    "editor.wordWrap": "wordWrapColumn"
+}

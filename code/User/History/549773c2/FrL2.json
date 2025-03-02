@@ -1,0 +1,6 @@
+{
+    "workbench.colorTheme": "Abyss",
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.fontSize": 20,
+    "files.autoSave": "afterDelay"
+}

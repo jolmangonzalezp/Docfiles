@@ -1,0 +1,10 @@
+{
+  "name": "actividad_cms",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Jolman Gonzalez\" && exit 1"
+  },
+  "private": true
+}

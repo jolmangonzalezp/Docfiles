@@ -1,0 +1,968 @@
+    1  ls
+    2  fastfetch
+    3  ls
+    4  vim .zshrc
+    5  vim .bashrc
+    6  vim .zshrc
+    7  cd Projects
+    8  ls
+    9  source .zshrc
+   10  pacin refind
+   11  source .zshrc
+   12  pas
+   13  vim .zshrc
+   14  pacin zsh-autosuggestion
+   15  pacman -S zsh-autosuggestion
+   16  pacman -Ss zsh-autosuggestion
+   17  pacin zsh-autosuggestions
+   18  pacin  \tzsh-syntax-highlighting
+   19  yay -S --noconfirm zsh-theme-powerlevel10k-git\necho 'source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme' >>~/.zshrc
+   20  p10k
+   21  p10k configure
+   22  zsh -f
+   23  p10k configure
+   24  source ~/.zshrc\n
+   25  [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh\n
+   26  nano .zshrc
+   27  code .zshrc
+   28  [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh\n
+   29  ls -l ~/.p10k.zsh\n
+   30  nano .zshrc
+   31  zsh -xv > ~/zsh_debug.log 2>&1\n
+   32  less ~/zsh_debug.log\n
+   33  cat ~/zsh_debug.log\n
+   34  zsh -xv > ~/zsh_debug.log
+   35  cat ~/zsh_debug.log\n
+   36  nano .zshrc
+   37  p10k configure
+   38  grep "echo" ~/.zshrc
+   39  zsh -xv > log
+   40  ca
+   41  cat
+   42  cat log
+   43  code log
+   44  zsh -xv > log
+   45  zsh -xv >> log
+   46  less log
+   47  ls -l /etc/motd ~/.motd\n
+   48  cat /etc/motd\ncat ~/.motd\n
+   49  ls -l /etc/profile.d/\n
+   50  grep "echo" ~/.zshrc ~/.zprofile ~/.zshenv\n
+   51  grep "echo" /etc/zsh/zshrc /etc/zsh/zshenv 2>/dev/null\n
+   52  alias\nfunctions\n
+   53  alias >> log\nfunctions >> log\n
+   54  clr
+   55  echo "$svn_status
+   56  echo $svn_status
+   57  echo "Usage: ${(j: :)${(s.::.)0#_}} <plugin> [...]" >&2
+   58  nano .zshrc
+   59  8
+   60  nano .zshrc
+   61  yay -S sysinfo\n
+   62  sudo pacman -Rns sysinfo\n
+   63  yay -S onefetch
+   64  onefetch
+   65  yay -Rns onefetch
+   66  sudo pacman -S archey4\n
+   67  yay -S archey4\n
+   68  archey
+   69  yay -Rns archey4\n
+   70  yay -S ufetch\n
+   71  yay -S nerdfetch
+   72  nerdfetch
+   73  git clone https://github.com/dylanaraps/pfetch
+   74  ls+
+   75  ls
+   76  cd pfetch
+   77  ls
+   78  cd ..
+   79  sudo install pfetch/pfetch /usr/local/bin/
+   80  ls -l /usr/local/bin/pfetch
+   81  pfetch
+   82  nano .zshrc
+   83  yay -Syyu
+   84  cd Projects/controllers
+   85  pas
+   86  artisan migrate:rollback
+   87  artisan migrate
+   88  pas
+   89  ..
+   90  laravel new crud
+   91  cd crud
+   92  npm install
+   93  nrb
+   94  npm run build
+   95  pam
+   96  pamc NoteController
+   97  pamm Note --migration
+   98  pam
+   99  sudo pacman -Syyu
+  100  yay -Syyu
+  101  cd Projects
+  102  ls
+  103  cd crud
+  104  pas
+  105  cd Projects/crud
+  106  php artisan migrate:rollback
+  107  pam
+  108  php artisan migrate:rollback
+  109  pas
+  110  pam
+  111  lscpu | grep Virtualization
+  112  ~/Android/Sdk/emulator/emulator -avd Small_phone_API_35 -verbose\n
+  113  ~/Android/Sdk/emulator/emulator -list-avds\n
+  114  avdmanager create avd -n Small_phone_API_35 -k "system-images;android-35;google_apis;x86_64"\n
+  115  rm -rf ~/.android/avd/Small_phone_API_35.avd\nrm -rf ~/.android/avd/Small_phone_API_35.ini\n
+  116  avdmanager create avd -n Small_phone_API_35 -k "system-images;android-35;google_apis;x86_64"\n
+  117  ~/Android/Sdk/emulator/emulator -list-avds\n
+  118  export ANDROID_AVD_HOME=$HOME/.android/avd\n
+  119  ls ~/.android/avd/Small_phone_API_35.ini\n
+  120  echo "path=$HOME/.android/avd/Small_phone_API_35.avd" > ~/.android/avd/Small_phone_API_35.ini\n
+  121  sudo chown -R $USER:$USER /opt/android-sdk\n
+  122  sdkmanager --list | grep "system-images"\n
+  123  sdkmanager "system-images;android-35;google_apis;x86_64"\n
+  124  cd Descargas/android-studio
+  125  sudo pcmanfm
+  126  sudo kvm-ok
+  127  sudo apt install qemu-kvm\nsudo usermod -aG kvm $(whoami)\n
+  128  sudo pacman -S qemu-full virt-manager virt-viewer dnsmasq vde2 bridge-utils\nsudo systemctl enable --now libvirtd\nsudo usermod -aG kvm,libvirt $(whoami)\n
+  129  ls -l /dev/kvm\n
+  130  sudo usermod -aG kvm $(whoami)\n
+  131  ~/Android/Sdk/emulator/emulator -avd Small_Phone_API_33 -verbose\n
+  132  kvm-ok\n
+  133  sdkmanager --update\n
+  134  adb logcat\n
+  135  ~/Android/Sdk/emulator/emulator -avd Small_Phone_API_33 -no-accel\n
+  136  /opt/android-sdk/system-images/android-33/google_apis_playstore/x86_64/\n
+  137  echo $ANDROID_SDK_ROOT\necho $ANDROID_HOME\n
+  138  export ANDROID_HOME=$HOME/Android/Sdk\nexport ANDROID_SDK_ROOT=$HOME/Android/Sdk\nexport PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH\n
+  139  source ~/.bashrc  # or source ~/.zshrc\n
+  140  ls -l ~/.android/avd/\n
+  141  ANDROID_SDK_ROOT=$HOME/Android/Sdk ~/Android/Sdk/emulator/emulator -avd Small_Phone_API_33 -verbose\n
+  142  avdmanager delete avd -n Small_Phone_API_33\navdmanager create avd -n Small_Phone_API_33 -k "system-images;android-33;google_apis_playstore;x86_64"\n
+  143  emulator -avd Small_Phone_API_33 -verbose\n
+  144  ANDROID_SDK_ROOT=$HOME/Android/Sdk android-studio\n
+  145  avdmanager delete avd -n Small_Phone_API_33\navdmanager create avd -n Small_Phone_API_33 -k "system-images;android-33;google_apis_playstore;x86_64"\n
+  146  sudo chown -R $(whoami) ~/Android/Sdk/\nchmod -R 755 ~/Android/Sdk/\n
+  147  sudo su -
+  148  reboot
+  149  ANDROID_SDK_ROOT=$HOME/Android/Sdk ~/Android/Sdk/emulator/emulator -avd Small_Phone_API_33 -verbose\n
+  150  avdmanager delete avd -n Small_Phone_API_33\navdmanager create avd -n Small_Phone_API_33 -k "system-images;android-33;google_apis_playstore;x86_64"\n
+  151  emulator -avd Small_Phone_API_33 -verbose\n
+  152  ANDROID_SDK_ROOT=$HOME/Android/Sdk ~/Android/Sdk/emulator/emulator -avd Small_Phone_API_33 -verbose-\n
+  153  sudo pacman -S ruby
+  154  gem install sass
+  155  sudo pacman -S okular
+  156  sudo pacman -Syyu okular
+  157  sudo pacman -S rofi papirus-icon-theme\nyay -S nerd-fonts-ubuntu-mono\ngit clone https://github.com/davatorium/rofi-themes.git\nsudo cp rofi-themes/User\ Themes/onedark.rasi /usr/share/rofi/themes
+  158  sudo vim /usr/share/rofi/themes/onedark.rasi
+  159  pacman -Ss epapirus
+  160  sudo pacman -S pop-icon-theme
+  161  sudo pacman -S elementary-icon-theme
+  162  sudo pacman -S cosmic-icon-theme
+  163  sudo pacman -S arc-icon-theme
+  164  sudo pacman -S arc-gtk-theme
+  165  cd Projects
+  166  ls
+  167  cd crud
+  168  pas
+  169  sudo  pacman -S lxrandr
+  170  sudo  pacman -Rns randr
+  171  sudo  pacman -Rns arandr
+  172  sudo pacman -S Scc
+  173  sudo pacman -Scc
+  174  cd Documentos git clone https://github.com/antoniosarosi/dotfiles.git
+  175  cd Documentos && git clone https://github.com/antoniosarosi/dotfiles.git
+  176  git clone https://github.com/antoniosarosi/dotfiles.git
+  177  rm -r dotfiles
+  178  sudo rm -r dotfiles
+  179  git clone https://github.com/antoniosarosi/dotfiles.git
+  180  reboot
+  181  xrandr | grep -w 'connected' | cut -d ' ' -f 2 | wc -l
+  182  pycharm-professional
+  183  qtile check
+  184  cd Projects/crud
+  185  pas
+  186  artisan migrate:rollback
+  187  pam
+  188  pas
+  189  sudo pacman -Syyu
+  190  cd Projects/crud
+  191  pas
+  192  artisan make:request NoteRequest
+  193  cd Projects/crud
+  194  pass
+  195  pas
+  196  cd Projects/crud
+  197  pas
+  198  artisan route:list
+  199  artisan make:controler PostController --resource
+  200  artisan make:controller PostController --resource
+  201  cd ..
+  202  laravel new apicrud
+  203  cd apicrud
+  204  npm install && npm run build
+  205  composer run dev
+  206  pam
+  207  composer create-project laravel/laravel api-laravel\n
+  208  artisan install:api
+  209  rofi -modi drun -show drun | sort
+  210  rofi -modi drun -show run
+  211  sudo pacman -S postman-bin
+  212  cd Projects/apicrud
+  213  artisan make:model Note --migration
+  214  pam
+  215  artisan make:controller NoteController --resource
+  216  artisan route:list
+  217  php artisan make:provider RouteServiceProvider\n
+  218  sudo pacman -Syy
+  219  sudo pacman -Syyu
+  220  ipconfig
+  221  ip link show
+  222  netstat
+  223  sudo pacman -S netstat
+  224  poweroff
+  225  sudo pacman -Syyu
+  226  sudo pacman -Syyu apache
+  227  pacman -Q ngnix
+  228  sudo nano /etc/httpd/conf/httpd.conf
+  229  sudo systemctl enable httpd
+  230  sudo systemctl start httpd
+  231  pacman -Q nginx
+  232  sudo systemctl stop nginx\nsudo systemctl disable nginx\n
+  233  >sudo systemctl reset-failed nginx\n
+  234  sudo pacman -Rns nginx\n
+  235  sudo pacman -Rns nginx-mainline\n
+  236  sudo rm -rf /etc/nginx\nsudo rm -rf /var/log/nginx\nsudo rm -rf /var/cache/nginx\n
+  237  sudo rm -rf /var/www/html\n
+  238  nginx -v\n
+  239  sudo systemctl enable httpd
+  240  sudo systemctl start httpd
+  241  sudo pacman -S php php-apache php-gd php-imagick
+  242  php -v
+  243  sudo nano /etc/httpd/conf/httpd.conf
+  244  sudo systemctl restart httpd
+  245  sudo vim /srv/http/info.php
+  246  sudo pacman -S phpmyadmin
+  247  sudo vim /etc/php/php.ini
+  248  sudo nano /etc/php/php.ini
+  249  cd WebstormProjects
+  250  cd actividad_cms
+  251  git init
+  252  git add .\n
+  253  git commit -m "Subiendo mis archivos iniciales"\n
+  254  git config --global user.email "jolmangonzalez5@gmail.com"
+  255  git config --global user.name "Jolman Gonzalez"
+  256  git commit -m "Subiendo mis archivos iniciales"\n
+  257  git remote add origin https://github.com/jolmangonzalezp/CMS_class.git\n
+  258  git remote -v\n
+  259  git branch -M main\ngit push -u origin main\n
+  260  ssh-keygen -t ed25519 -C "jolmangonzalez5@gmail.com"\n
+  261  cat ~/.ssh/id_ed25519.pub\n
+  262  git remote set-url origin git@github.com:jolmangonzalezp/CMS_class.git\n
+  263  ssh -T git@github.com\n
+  264  ssh -T git@github.com
+  265  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_ed25519\n
+  266  ssh -T git@github.com\n
+  267  ssh-keygen -t ed25519 -C "tuemail@example.com"\n
+  268  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_ed25519\n
+  269  ssh -T git@github.com\n
+  270  ssh -T git@github.com\n# Attempts to ssh to GitHub\n
+  271  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_ed25519\n
+  272  cat ~/.ssh/id_ed25519.pub\n
+  273  ssh -T git@github.com\n# Attempts to ssh to GitHub\n
+  274  git push -u origin main\n
+  275  git remote set-url origin https://TOKEN@github.com/jolmangonzalezp/CMS_class.git\n
+  276  git push -u origin main\n
+  277  git remote set-url origin git@github.com:jolmangonzalezp/CMS_class.git
+  278  git push -u origin main\n
+  279  git pull  origin main\n
+  280  git config pull.rebase false
+  281  git config pull.rebase true
+  282  git pull  origin main\n
+  283  git push -u origin main\n
+  284  sudo nano /etc/php/php.ini
+  285  sudo systemctl restart httpd
+  286  sudo nano /etc/httpd/conf/extra/phpmyadmin.conf
+  287  sudo nano /etc/httpd/conf/httpd.conf
+  288  sudo nano /etc/webapps/phpmyadmin/config.inc.php
+  289  sudo nano /etc/httpd/conf/httpd.conf
+  290  sudo systemctl restart httpd
+  291  sudo nano /etc/webapps/phpmyadmin/config.inc.php
+  292  sudo nano /etc/httpd/conf/httpd.conf
+  293  sudo nano /etc/php/php.ini
+  294  sudo nano /etc/httpd/conf/extra/phpmyadmin.conf
+  295  sudo nano /etc/httpd/conf/httpd.conf
+  296  sudo nano /etc/webapps/phpmyadmin/config.inc.php
+  297  sudo pacman -S phpmyadmin
+  298  sudo pacman -S phpmyadmin php-mbstring phpmyadmin-motranslator php-tcpdf\n
+  299  sudo nano /etc/httpd/conf/httpd.conf\n
+  300  sudo systemctl restart httpd\n
+  301  sudo pacman -Syyu
+  302  yay -Syyu
+  303  which php\n
+  304  sudo pacman -S kate
+  305  bspwm -v
+  306  sudo pacman -S polybar
+  307  monitor -r
+  308  xrandr
+  309  cp -r /etc/polybar/config.ini $XDG_CONFIG_HOME/polybar/config.ini
+  310  cp -r /etc/polybar/config.ini $XDG_CONFIG_HOME/polybar/
+  311  cd .config/polybar
+  312  cd ./.config/polybar
+  313  mkdir -p ./.config/polybar
+  314  cp -r /etc/polybar/config.ini $XDG_CONFIG_HOME/polybar/
+  315  mkdir -p ./.config/polybar
+  316  cp -r /etc/polybar/config.ini $XDG_CONFIG_HOME/polybar/
+  317  cp -r /etc/polybar/config.ini ./.config/polybar/
+  318  cd Descargar && git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+  319  cd Descargas && git clone --depth=1 https://github.com/adi1090x/polybar-themes.git
+  320  polybar
+  321  chmod +x $HOME/.config/polybar/launch.sh
+  322  polybar
+  323  chmod +x $HOME/.config/polybar/launch.sh
+  324  poweroff
+  325  pactl set-sink-mute 0 toggle
+  326  setxkbmap us
+  327  yay -Syyu bspwm-rounded-corners 
+  328  yay -Syyu bspwm-patched
+  329  yay -S bspwm-patched
+  330  yay -Syyu bspwm-rounded-corners 
+  331  sudo pacman -S ttf-font-awesome
+  332  yay -S ttf-material-icons-git
+  333  yay -S font-awesome-5
+  334  yay -S font-awesome-5 
+  335  yay -S ttf-font-awesome-5  otf-font-awesome-5 
+  336  ip link
+  337  iw dev\n
+  338  sudo pacman -S iw iwd
+  339  iw dev\n
+  340  polybar wlan\n
+  341  cd Descargas/polybar-themes
+  342  ./setup.sh
+  343  launch.sh --theme
+  344  ./setup.sh
+  345  cd  ~/.config/polybar/
+  346  launch.sh --theme
+  347  ./launch.sh --blocks
+  348  launch.sh --forest
+  349  ./launch.sh --forest
+  350  ./launch.sh --panels
+  351  ./launch.sh --blocks
+  352  ls -1 /sys/class/power_supply/
+  353  ./launch.sh --blocks
+  354  reboot
+  355  ping archlinux
+  356  ping archlinux.org
+  357  ping nmtui
+  358  nmtui
+  359  poweroff
+  360  nmtui
+  361  xrandr --listmonitors\n
+  362  xrandr | grep " connected"\n
+  363  ls /sys/class/drm/ | grep -E 'card[0-9]-'\n
+  364  xrandr | grep " connected" | wc -l\n
+  365  setxkbmap us
+  366  polybar -m\n
+  367  ip link show\n
+  368  setxkbmap us
+  369  poweroff
+  370  xrandr --query | grep " connected" | wc -l
+  371  picom --experimental-backends &
+  372  picom --corner-radius
+  373  picom --corner-radius 5
+  374  picom --corner-radius 15
+  375  monitors=$(xrandr --query | grep " connected" | wc -l)
+  376  if [ "$monitors" -ne 1 ]; then\n    bspc monitor eDP-1 -d 1 2 3 4 5\n    bspc monitor HDMI-1 -d 6 7 8 9 10\nelse\n    bspc monitor eDP-1 -d 1 2 3 4 5 6 7 8 9 10\nfi
+  377  if [ "$monitors" -ne 1 ]; then\n    2\nelse\n    1\nfi
+  378  if [ "$monitors" -ne 1 ]; then\n   echo 2\nelse\n    echo 1\nfi
+  379  xrandr
+  380  pactl set-sink-mute 0 toggle
+  381  >; $ ls -1 /sys/class/backlight/
+  382  ls -1 /sys/class/backlight/
+  383  xrandr
+  384  reboot
+  385  xrandr
+  386  bspc desktop 1 -m HDMI-1\nbspc desktop 3 -m HDMI-1\nbspc desktop 5 -m HDMI-1\nbspc desktop 7 -m HDMI-1\nbspc desktop 9 -m HDMI-1\n
+  387  bspc -m
+  388  bspc 
+  389  bspc wm -r\n
+  390  bspc query -M --names\n
+  391  reboot
+  392  bspc query -M --names\n
+  393  reboot
+  394  sudo pacman -Syyu
+  395  reboot
+  396  poweroff
+  397  ls -1 /sys/class/backlight/
+  398  sudo systemctl restart dbus\n
+  399  systemctl status bluetooth\n
+  400  bluetoothctl devices\n
+  401  bluetoothctl connect 41:42:FF:E6:EA:96\n
+  402  bluetoothctl blocked
+  403  lsusb | grep -i bluetooth\n
+  404  rfkill unblock bluetooth\nbluetoothctl power on\n
+  405  sudo systemctl restart bluetooth\n
+  406  bluetoothctl power on\n
+  407  rfkill list bluetooth\n
+  408  sudo rfkill unblock bluetooth\n
+  409  bluetoothctl power on\n\n
+  410  sudo modprobe -r btusb\nsudo modprobe btusb\n
+  411  sudo systemctl restart bluetooth\nbluetoothctl power on\n
+  412  lsusb | grep -i bluetooth\n
+  413  dmesg | grep -i bluetooth\n
+  414  sudo dmesg | grep -i bluetooth\n
+  415  journalctl -xe | grep -i bluetooth
+  416  sudo dmesg | grep -i bluetooth  # Ver detalles del hardware
+  417  sudo pacman -S bluez bluez-utils  # Arch Linux/Manjaro
+  418  pulseaudio -k && pulseaudio --start
+  419  sudo pacman -S pipewire pipewire-pulse\nsystemctl --user restart pipewire
+  420  sudo pacman -Rns pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-jack pulseaudio
+  421  sudo pacman -S pipewire pipewire-pulse\nsystemctl --user restart pipewire
+  422  sudo btmon  # Herramienta de diagnóstico
+  423  bluetoothctl
+  424  sudo hciconfig hci0 reset
+  425  echo -e "connect 41:42:FF:E6:EA:96\nquit" | bluetoothctl
+  426  pacmd set-card-profile bluez_card.41_42_FF_E6_EA_96 a2dp_sink
+  427  sudo pacman -S bluez-utils
+  428  sudo rfkill unblock bluetooth
+  429  sudo hcitool cmd 0x3f 0x01  
+  430  bluetoothctl connect 41:42:FF:E6:EA:96\n
+  431  pactl set-card-profile <nombre_tarjeta> a2dp_sink
+  432  pactl info | grep "Server Name"
+  433  # Instalar PipeWire + codecs Bluetooth (si no está hecho)\nsudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack wireplumber\nsystemctl --user restart pipewire
+  434  pactl info | grep "Server Name"
+  435  which pacmd  # Debería mostrar /usr/bin/pacmd
+  436  sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack wireplumber pavucontrol
+  437  systemctl --user stop pulseaudio.service\nsystemctl --user disable pulseaudio.service\nsystemctl --user mask pulseaudio.service
+  438  systemctl --user enable --now pipewire.service\nsystemctl --user enable --now pipewire-pulse.service\nsystemctl --user enable --now wireplumber.service
+  439  pactl info | grep "Server Name"
+  440  sudo pacman -S libldac libfreeaptx
+  441  sudo systemctl restart bluetooth
+  442  sudo pacman -S blueman  # Instalar GUI\nblueman-manager          # Abrir administrador
+  443  sudo pacman -S realtime-privileges  # Permisos de baja latencia (opcional)
+  444  sudo vim /etc/pipewire/pipewire.conf
+  445  setxkbmap latam
+  446  ~/.config/pipewire/pipewire.conf.d/bluez.conf
+  447  vim ~/.config/pipewire/pipewire.conf.d/bluez.conf
+  448  sudo vim ~/.config/pipewire/pipewire.conf.d/bluez.conf
+  449  sudo pacman -S helvum  # GUI tipo "Patchbay" para PipeWire
+  450  pw-top       # Monitor en tiempo real\npw-cli list  # Listar nodos de audio
+  451  printenv > "/tmp/tmp-120010f76a7STo4EDg.txt"
+  452  printenv > "/tmp/tmp-5539awkp1frv7XxA.txt"
+  453  reboot
+  454  btop
+  455  htop
+  456  top
+  457  pactl info | grep "Server Name"
+  458  top
+  459  top -o %CPU  # Busca procesos "kworker" en la lista.
+  460  sudo perf record -g -a sleep 10 && sudo perf report  # Requiere el paquete `perf`.
+  461  dmesg -T | grep -i error  # Busca errores recientes.\njournalctl -p 3 -xb      # Muestra errores del sistema.
+  462  grep . -r /sys/firmware/acpi/interrupts/  # Verifica interrupciones ACPI.
+  463  top
+  464  btop
+  465  pkill picom
+  466  sudo pkill picomOA
+  467  pkill picom
+  468  sudo pacman -Syyu
+  469  pkill picom
+  470  vim ~/.config/picom/picom.conf
+  471  sudo vim ~/.config/picom/picom.conf
+  472  su
+  473  mkdir -p .config/picom
+  474  vim ~/.config/picom/picom.conf
+  475  sudo pacman -S mesa lib32-mesa vulkan-radeon
+  476  vim ~/.config/sxhkd/sxhkdrc
+  477  sudo pacman -Sc          # Limpia caché de paquetes\nrm -rf ~/.cache/*        # Borra caché de usuario
+  478  sudo fstrim -v /         # Habilita TRIM (si no está activo)
+  479  vim /etc/default/grub
+  480  sudo vim /etc/default/grub
+  481  sudo grub-mkconfig -o /boot/grub/grub.cfg
+  482  free -h
+  483  sudo pacman -S linux-lts linux-lts-headers  # Kernel LTS\nsudo pacman -S linux-zen linux-zen-headers  # Kernel Zen (optimizado para rendimiento)
+  484  inxi -Fxz          # Información completa del sistema\nglxinfo -B         # Detalles de los drivers gráficos
+  485  top
+  486  btop
+  487  polybar -l info example 2> ~/polybar-errors.log
+  488  polybar -l info main 2> ~/polybar-errors.log
+  489  systemctl --user status pipewire wireplumber pipewire-pulse
+  490  killall polybar
+  491  top
+  492  btop
+  493  history
+  494  history > history.txt
+  495  btop
+  496  cat /tmp/tmp-120010f76a7STo4EDg.txt
+  497  ls /tmp
+  498  cat /tmp/polybar1.log
+  499  printenv
+  500  top -o %CPU
+  501  free -h
+  502  systemctl list-unit-files --state=enabled  # Lista servicios activos\njournalctl -p 3 -xb                       # Muestra errores del sistema
+  503  sudo vim /etc/default/grub
+  504  sudo grub-mkconfig -o /boot/grub/grub.cfg
+  505  sudo vim /etc/modprobe.d/blacklist.conf
+  506  sudo systemctl restart systemd-udevd
+  507  sudo pacman -Syu polybar
+  508  polybar -l info main
+  509  pkill polybar
+  510  polybar -l info main
+  511  pacman -Qs alsa-utils
+  512  ls /sys/class/backlight/\n
+  513  pkill polybar
+  514  ls /sys/class/backlight/\n
+  515  polybar -l info main
+  516  pulseaudio --check\n
+  517  pkill polybar
+  518  polybar -l info main
+  519  amixer scontrols\n
+  520  systemctl --user restart pipewire pipewire-pulse\n
+  521  amixer controls\n
+  522  pkill polybar && polybar main &\n
+  523  pkill polybar && polybar main\n
+  524  pactl info\n
+  525  pactl list sinks | grep -E 'Name|Description|Volume'\n
+  526  systemctl --user status pipewire-pulse\n
+  527  systemctl --user start pipewire-pulse\nsystemctl --user enable pipewire-pulse\n
+  528  systemctl --user stop pipewire pipewire-pulse wireplumber\nsystemctl --user start pipewire pipewire-pulse wireplumber\n
+  529  pactl info
+  530  journalctl --user -xe | grep -i pipewire\n
+  531  pacman -Qs rtkit\n
+  532  sudo pacman -S rtkit\n
+  533  sudo systemctl enable --now rtkit-daemon\n
+  534  systemctl --user restart pipewire pipewire-pulse wireplumber\nsystemctl --user status pipewire-pulse\n
+  535  pactl info\n
+  536  nano ~/.config/pipewire/pipewire.conf\n
+  537  mkdir -p ~/.config/pipewire/\n
+  538  nano ~/.config/pipewire/pipewire.conf\n
+  539  systemctl --user restart pipewire pipewire-pulse wireplumber\n
+  540  pactl info\n
+  541  sudo pacman -Syyu pipewire pipewire-pulse wireplumber\n
+  542  systemctl --user restart pipewire pipewire-pulse wireplumber\n
+  543  pkill polybar && polybar main\n
+  544  amixer scontrols\n
+  545  sudo pacman -Syyu pulseaudio
+  546  aplay -l\n
+  547  pactl list sinks | grep 'Name'\n
+  548  speaker-test -D plughw:1,0 -c 2\n
+  549  pacman -Qs 'pipewire|pulseaudio'\n
+  550  pactl list sinks | grep 'Name'\n
+  551  top
+  552  sudo pacman -Syyu tint2
+  553  tiny2 &
+  554  tint2 &
+  555  htop\n
+  556  sudo pacman -S htop\n
+  557  htop
+  558  top > top.txt
+  559  cat top.txt
+  560  top 
+  561  top
+  562  btop
+  563  ps aux | grep firefox
+  564  firefox
+  565  reboot
+  566  sudo pacman -Syyu firefox-nightly
+  567  sudo pacman -Rns
+  568  sudo pacman -Rns firefox
+  569  sudo pacman -Scc
+  570  pkill polybar && polybar main\n
+  571  top
+  572  btop
+  573  firefox
+  574  firefox-nightly
+  575  btop
+  576  xwininfo
+  577  xprop\n
+  578  xprop | grep "WM_CLASS"\n
+  579  printenv > "/tmp/tmp-3200590mB4dDtluWd.txt"
+  580  printenv > "/tmp/tmp-32516Dw3ABRMpm8E0.txt"
+  581  printenv > "/tmp/tmp-34622ri6ygw4k3Upo.txt"
+  582  printenv > "/tmp/tmp-36661JPbgAEachwJe.txt"
+  583  printenv > "/tmp/tmp-37332M8EMQjDcOLfC.txt"
+  584  printenv > "/tmp/tmp-40659zrxfHlM2iZKb.txt"
+  585  poweroff
+  586  pactl list short sinks\n
+  587  systemctl --user status pipewire pipewire-pulse\n
+  588  journalctl --user -u pipewire --no-pager --lines=50\n
+  589  sudo pacman -Syyu pipewire-pulse
+  590  systemctl --user restart pipewire pipewire-pulse\n
+  591  pactl list sinks | grep Mute\n
+  592  pulseaudio --kill && pulseaudio --start\n
+  593  pactl list short sinks\n
+  594  pactl info\n
+  595  sudo pacman -S pipewire pipewire-pulse wireplumber\n
+  596  systemctl --user status pipewire wireplumber\n
+  597  pipewire &\nwireplumber &\n
+  598  ls -l /run/user/$(id -u)/pipewire-0\n
+  599  systemctl --user restart pipewire wireplumber\n
+  600  pactl info\n
+  601  pw-cli list-objects Node\n
+  602  pipewire &\nwireplumber &\n
+  603  pkill -9 pipewire\npkill -9 wireplumber\n
+  604  pgrep -l pipewire\npgrep -l wireplumber\n
+  605  pkill -9 pipewire\npkill -9 wireplumber\n
+  606  pgrep -l pipewire\npgrep -l wireplumber\n
+  607  rm -rf /run/user/$(id -u)/pulse/*\nrm -rf /run/user/$(id -u)/pipewire-0\n
+  608  systemctl --user restart pipewire wireplumber\n
+  609  pactl info\n
+  610  systemctl --user stop pipewire pipewire-pulse wireplumber\n
+  611  pgrep -l pipewire\npgrep -l wireplumber\n
+  612  pkill -9 pipewire wireplumber pipewire-pulse\n
+  613  rm -rf /run/user/$(id -u)/pulse/*\nrm -rf /run/user/$(id -u)/pipewire-0\n
+  614  systemctl --user start pipewire wireplumber\n
+  615  pactl info\n
+  616  journalctl --user -xe | grep -i pipewire\n
+  617  pipewire-pulse &\n
+  618  rm -rf ~/.config/pulse\nrm -rf /run/user/$(id -u)/pulse/*\n
+  619  systemctl --user restart pipewire wireplumber pipewire-pulse\n
+  620  pacman -Qs pipewire-pulse\n
+  621  systemctl --user restart pipewire pipewire-pulse wireplumber\n
+  622  ps aux | grep pulseaudio\n
+  623  systemctl --user stop pulseaudio\nsystemctl --user disable pulseaudio\nsystemctl --user mask pulseaudio\n
+  624  mv ~/.config/pipewire ~/.config/pipewire.backup\nsystemctl --user restart pipewire pipewire-pulse wireplumber\n
+  625  systemctl --user status pipewire-pulse\n
+  626  sudo pacman -Rns pulseaudio pulseaudio-alsa pulseaudio-bluetooth\n
+  627  sudo pacman -Rns pulseaudio-alsa\n
+  628  systemctl --user daemon-reexec\n
+  629  nano ~/.config/pipewire/pipewire.conf\n
+  630  systemctl --user restart pipewire pipewire-pulse wireplumber\n
+  631  nano ~/.config/pipewire/pipewire.conf\n
+  632  systemctl --user status wireplumber\n
+  633  systemctl --user enable --now wireplumber\n
+  634  systemctl --user restart pipewire pipewire-pulse wireplumber\n
+  635  pactl list sinks\n
+  636  pactl load-module module-udev-detect\n
+  637  rm -rf ~/.config/pipewire ~/.local/state/pipewire\nrm -rf ~/.pulse ~/.config/pulse ~/.local/state/pulse\n
+  638  systemctl --user restart pipewire pipewire-pulse wireplumber\n
+  639  mkdir -p ~/.config/pipewire\ncp -r /usr/share/pipewire/* ~/.config/pipewire/\nsystemctl --user restart pipewire pipewire-pulse wireplumber\n
+  640  pactl list sinks\n
+  641  pavucontrol\n
+  642  pactl load-module module-udev-detect\npactl list sinks\n
+  643  systemctl --user status pipewire pipewire-pulse wireplumber\n
+  644  LANG=C pw-dump | grep "state"\n
+  645  LANG=C pw-dump | grep "PipeWire version"\n
+  646  LANG=C pw-cli list-objects Node | grep -E 'id|state|name'\n
+  647  LANG=C pw-top\n
+  648  LANG=C pw-cli list-objects Device | grep -E 'id|name'\n
+  649  LANG=C pw-cli list-objects Node | grep -E 'id|state|name'\n
+  650  aplay -l\n
+  651  lsmod | grep snd\n
+  652  lsmod | grep snd_hda_intel\n
+  653  lsmod | grep snd_usb_audio\n
+  654  sudo modprobe snd_hda_intel\n\n
+  655  systemctl --user restart pipewire\n
+  656  systemctl --user restart pipewire-pulse\nsystemctl --user restart wireplumber\n
+  657  systemctl --user status pipewire\nsystemctl --user status pipewire-pulse\nsystemctl --user status wireplumber\n
+  658  netstat -tulnp | grep pipewire\n
+  659  journalctl --user -u pipewire-pulse -f
+  660  ls /etc/pipewire/\n
+  661  pw-cli list-objects
+  662  sudo usermod -aG audio $USER
+  663  reboot
+  664  systemctl --user status pipewire\nsystemctl --user status pipewire-pulse\n
+  665  pactl info\n
+  666  pactl list short sinks\n
+  667  locale\n
+  668  yay -S ttf-nerd-fonts-symbols\n
+  669  fc-list | grep "Nerd Font"\n
+  670  polybar -l info\n
+  671  polybar-msg cmd restart\n
+  672  killall polybar\npolybar main &\n
+  673  yay -S ttf-font-awesome\n
+  674  polybar-msg cmd restart\n
+  675  font-0 = "FiraCode Nerd Font Mono:size=10"\nfont-1 = "FontAwesome:size=12"\n
+  676  killall polybar\npolybar main &\n
+  677  killall polybar
+  678  fc-list | grep "FontAwesome"\n
+  679  sudo pacman -S ttf-font-awesome\n
+  680  cp -r *.otf  ~/.local/share/fonts/\n
+  681  fc-cache -fv
+  682  fc-list | grep "FontAwesome"\n
+  683  fc-list | grep "fontawesome"\n
+  684  ls ~/.local/share/fonts/
+  685  fc-list | grep "Font Awesome"\n
+  686  xrandr
+  687  xrandr --output HDMI-1 --mode 1366x768 --pos 0x0 --output eDP-1 --mode 1920x1080 --pos 0x768\n
+  688  sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack\n
+  689  sudo pacman -S xdg-desktop-portal-wlr\n
+  690  sudo pacman -S wayland xorg-xwayland\nsudo pacman -S hyprland\nsudo pacman -S swaybg pipewire pipewire-pulse pipewire-alsa\nsudo pacman -S xdg-desktop-portal-wlr\n
+  691  sudo pacman -Rns swaybg
+  692  sudo pacman -S Hyprctl
+  693  sudo pacman -S Hyprpaper
+  694  sudo pacman -S hyprctl
+  695  sudo pacman -S hyprpaper
+  696  mkdir -p ~/.config/hypr\ncp /etc/xdg/hypr/hyprland.conf ~/.config/hypr/\n
+  697  sudo pacman -S waybar wofi wtype\n
+  698  mkdir -p ~/.config/hypr\ncp /etc/xdg/hypr/hyprland.conf ~/.config/hypr/\n
+  699  reboot
+  700  xrandr --output HDMI-1 --mode 1366x768 --pos 0x0 --output eDP-1 --mode 1920x1080 --pos 0x768\n
+  701  reboot
+  702  wm -r
+  703  bspc wm -r
+  704  reboot
+  705  mkdir -p ~/.config/hypr\ncp /etc/xdg/hypr/hyprland.conf ~/.config/hypr/\n
+  706  find /etc -name "hyprland.conf"\nfind ~/.config -name "hyprland.conf"\n
+  707  vim ~/.config/hypr/hyprland.conf\n
+  708  vim ~/.config/sxhkd/sxhkdrc\n
+  709  vim ~/.config/hypr/hyprland.conf\n
+  710  vim ~/.config/sxhkd/sxhkdrc\n
+  711  vim ~/.config/hypr/hyprland.conf\n
+  712  discord --enable-features=UseOzonePlatform --ozone-platform=x11\n
+  713  discord --enable-features=UseOzonePlatform --ozone-platform=wayland\n
+  714  discord --enable-features=UseOzonePlatform --ozone-platform=x11\n
+  715  discord --enable-features=UseOzonePlatform --ozone-platform=wayland\n
+  716  sudo pacman -S xdg-desktop-portal-hyprland\n
+  717  vim ~/.config/environment.d/99-hyprland.conf
+  718  mkdir -p ~/.config/environment.d/
+  719  vim ~/.config/environment.d/99-hyprland.conf
+  720  systemctl --user restart xdg-desktop-portal\n
+  721  discord --enable-features=WebRTCPipeWireCapturer,UseOzonePlatform --ozone-platform=wayland\n
+  722  vim ~/.config/hypr/hyprland.conf
+  723  discord --disable-backgrounding-occluded-windows\n
+  724  hyprctl reload\n
+  725  discord --disable-backgrounding-occluded-windows\n
+  726  while true; do xdotool search --onlyvisible --class discord windowfocus; sleep 10; done\n
+  727  sudo pacman -S xdotool\n
+  728  while true; do xdotool search --onlyvisible --class discord windowfocus; sleep 10; done\n
+  729  sudo pacman -Rns xdg-desktop-portal-hyprland\n
+  730  sudo pacman -Rns waybar wofi wtype\n
+  731  sudo pacman -Rns hyprpaper
+  732  sudo pacman -Rns hyprland\nsudo pacman -Rns swaybg\n
+  733  shutdown
+  734  shutdown now
+  735  setxkbmap us
+  736  cd Projects/apicrud
+  737  artisan make:Request NoteRequest
+  738  sudo pacman -Syyu postgres
+  739  sudo pacman -Syyu postgresql
+  740  artisan make:request NoteRequest
+  741  sudo pacman -S sqlite3
+  742  pas
+  743  setxkbmap latam
+  744  pas
+  745  artisan make:resource NoteResource
+  746  sudo pacman -Syyu
+  747  pas
+  748  ..
+  749  reboot
+  750  sudo pacman -Syyu
+  751  CA
+  752  setxkbmap us
+  753  sudo pacman -Syyu
+  754  yay -Syyu
+  755  timedatectl status\n
+  756  sudo timedatectl set-ntp true\n
+  757  yay -Syyu\n
+  758  timedatectl show --property=Timezone\n
+  759  timedatectl list-timezones\n
+  760  sudo timedatectl set-timezone America/Bogota
+  761  timedatectl status\n
+  762  sudo pacman -Syyu gnucash
+  763  cd Projects/api
+  764  cd Projects/apicrud
+  765  pas
+  766  bspc wm -r
+  767  sudo pacman -S maim\n
+  768  maim -s ~/Imágenes/captura_seleccion.png\n
+  769  sudo pacman -S xdotool\n
+  770  sudo pacman -Rns scrot
+  771  sudo pacman -Scc
+  772  ping 8.8.8.8
+  773  ping -c3 8.8.8.8
+  774  ping www.google.com
+  775  ping 172.17.1.1
+  776  ping -c5 172.17.1.1
+  777  vim .zshrc
+  778  source .zshrc
+  779  ping 5 172.17.1.1
+  780  ping 7 www.google.com
+  781  ping www.google.com
+  782  vim .zshrc
+  783  ping www.google.com
+  784  source .zshrc
+  785  ping www.google.com
+  786  ip link
+  787  ipconfig
+  788  sudo pacman -S ipconfig
+  789  ifconfig
+  790  ip link
+  791  hostname
+  792  ip link
+  793  ip a
+  794  arp
+  795  sudo pacman -S arp
+  796  ip neigh show
+  797  whoami
+  798  hostname
+  799  netstat
+  800  sudo pacman -S netstat
+  801  sudo pacman -S net-tools\n
+  802  ss -tunlp
+  803  ss -tn
+  804  ss -un
+  805  ss -l
+  806  sudo pacman -S traceroute\n
+  807  traceroute www.google.com
+  808  nslookup
+  809  sudo pacman -S dnsutils\n
+  810  nslookup www.google.com
+  811  setxkbmap us
+  812  yay -S dropbox-bin
+  813  yay -S dropbox
+  814  yay -S ttf-ms-win10-auto ttf-ms-win11-auto
+  815  yay -S  ttf-ms-win11-auto
+  816  poweroff
+  817  cd Descargas
+  818  git clone https://github.com/jolmangonzalezp/Doctypes.git
+  819  git clone https://github.com/jolmangonzalezp/archinstall.git
+  820  sudo pacman -Rns tint2
+  821  sudo pacman -Rns anydesk
+  822  sudo pacman -Ss anydesk
+  823  sudo pacman -Rns anydesk-bin
+  824  sudo pacman -Rns volume-icon
+  825  sudo pacman -Rns volumeicon
+  826  yay -S  whatstux
+  827  sudo pacman -Syyu
+  828  yay -S  whatstux
+  829  killall pcmanfm
+  830  /bin/python /home/jolman/Projects/Python/ProyectoInicial/app.py
+  831  source ProyectoInicial/.venv/bin/activate
+  832  php freeze
+  833  php list
+  834  source ProyectoInicial/.venv/bin/activate
+  835  pip list
+  836  pip install --upgrade pip
+  837  /bin/python /home/jolman/Projects/Python/ProyectoInicial/app.py
+  838  poweroff
+  839  sudo pacman -Syyu
+  840  sudo pacman -Rns  whatstux
+  841  sudo pacman -Rns  brave
+  842  sudo pacman -Rns  brave-bin
+  843  history
+  844  xprop | grep "WM_CLASS"\n
+  845  sudo pacman -Syyu
+  846  poweroff
+  847  sudo pacman -Syyu
+  848  sudo pacman -S inkscape
+  849  sudo pacman -Syyu
+  850  sudo pacman -Syyu boxes
+  851  sudo pacman -Syyu gnome-boxes
+  852  nmtui
+  853  sudo pacman -Syyu
+  854  sudo nano /etc/httpd/conf/httpd.conf\n
+  855  sudo chown -R http:http /home/jolman/www
+  856  sudo chmod -R 755 /home/jolman/www
+  857  sudo systemctl restart httpd\n
+  858  sudo chmod -R 755
+  859  cd www
+  860  ls
+  861  nano index.php
+  862  sudo chmod -R 755 /home/jolman/www
+  863  sudo chown -R http:http /home/jolman/www
+  864  sudo chmod +x /home/jolman
+  865  sudo nano /etc/httpd/conf/httpd.conf\n
+  866  sudo systemctl restart httpd\n
+  867  echo "<h1>¡Apache funciona | sudo tee //home/jolman/www/index.html
+  868  rm -r index.php
+  869  sudo rm -r index.php
+  870  sudo chmod -R 755 /home/jolman/www\n
+  871  sudo chmod +x /home/jolman\n
+  872  sudo chown -R http:http /home/jolman/www\n
+  873  sudo chown jolman:jolman /home/jolman/www/
+  874  sudo chmod -R 777 /home/jolman/www\n
+  875  sudo usermod -aG http jolman
+  876  sudo chmod -R 775 /home/jolman/www\n
+  877  sudo chown -R jolman:http /home/jolman/www\n
+  878  sudo nano /etc/php/php.ini
+  879  cd Plantilla
+  880  git init
+  881  ls
+  882  git add .\ngit commit -m "Primer commit"\n
+  883  git remote add origin https://github.com/usuario/repo.git\n
+  884  git remote add origin https://github.com/jolmangonzalezp/portfolio.git\n
+  885  git remote -v
+  886  git branch -M main\ngit push -u origin main
+  887  git remote set-url origin git@github.com:jolmangonzalezp/porfolio.git\n
+  888  ssh -T git@github.com\n
+  889  git add .\ngit commit -m "Primer commit"\ngit push -u origin main\n
+  890  sudo pacman -Syyu
+  891  cat .zshrc
+  892  cd ..
+  893  ..
+  894  cat .zshrc
+  895  cd Projects
+  896  mkdir CandyBagGirls
+  897  mkdir backend
+  898  mkdir frontend
+  899  ls
+  900  mv backend CandyBagGirls
+  901  mv frontend CandyBagGirls
+  902  LS
+  903  ls
+  904  cd CandyBagGirls
+  905  ls
+  906  cd backend
+  907  python -m venv .venv
+  908  ls
+  909  ls -la
+  910  pip install flask flask-cors flask-sqlalchemy
+  911  source venv/bin/activate
+  912  source .venv/bin/activate
+  913  pip install flask flask-cors flask-sqlalchemy
+  914  pip install --upgrade pip
+  915  setxkbmap us
+  916  cd ../frontend
+  917  ..
+  918  rm frontend
+  919  rm /r frontend
+  920  rm -r frontend
+  921  rmdir -r frontend
+  922  rmdir  frontend
+  923  ls
+  924  vue create frontend
+  925  npm install -g @vue/cli
+  926  sudo npm install -g @vue/cli
+  927  vue --version\n
+  928  vue create frontend\n
+  929  cd frontend
+  930  vue add router\n
+  931  npm run build\n
+  932  npm install
+  933  cd ../backend
+  934  flask run
+  935  poweroff
+  936  pacman -Qet
+  937  cd Projects/CandyBagGirls/backend
+  938  flask run
+  939  source .venv/bin/activate
+  940  flask run
+  941  sudo pacman -Syyu
+  942  cd projects
+  943  cd Projects
+  944  git clone https://github.com/jolmangonzalezp/Docfiles.git
+  945  cd Docfiles
+  946  ls
+  947  git add .
+  948  setxkbmap us
+  949  git add .
+  950  git commit "organized the principal directories with their files"
+  951  git commit -m "organized the principal directories with their files"
+  952  git push
+  953  ssh-keygen -t rsa -b 4096 -C "jolmangonzalez5@gmail.com"\n
+  954  cat ~/.ssh/id_rsa.pub\n
+  955  ssh-keygen -t rsa -b 4096 -C "jolmangonzalez5@gmail.com"\n
+  956  ls ~/.ssh/\n
+  957  cat ~/.ssh/id_rsa.pub\n
+  958  cat ~/.ssh/id_ed25519.pub\n
+  959  ssh -T git@github.com\n
+  960  git remote -v\n
+  961  git remote set-url origin git@github.com:jolmangonzalezp/Docfiles.git\n
+  962  git remote -v\n
+  963  git push origin main\n
+  964  ls
+  965  mkdir code
+  966  cd code
+  967  code --list-extensions > extensiones.txt
+  968  ..

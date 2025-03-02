@@ -1,0 +1,75 @@
+[
+    {
+        "_id": "3a2bbe23-6811-4118-8f7a-4645fb8f89ae",
+        "colId": "history",
+        "created": "2025-02-18T20:11:50.370Z",
+        "modified": "2025-02-18T20:11:50.370Z",
+        "response": {
+            "responseText": "",
+            "filePath": "",
+            "type": "json",
+            "headers": [
+                {
+                    "name": "host",
+                    "value": "127.0.0.1:8000"
+                },
+                {
+                    "name": "connection",
+                    "value": "close"
+                },
+                {
+                    "name": "x-powered-by",
+                    "value": "PHP/8.4.3"
+                },
+                {
+                    "name": "cache-control",
+                    "value": "no-cache, private"
+                },
+                {
+                    "name": "date",
+                    "value": "Tue, 18 Feb 2025 20:11:50 GMT"
+                },
+                {
+                    "name": "content-type",
+                    "value": "application/json"
+                },
+                {
+                    "name": "access-control-allow-origin",
+                    "value": "*"
+                }
+            ],
+            "cookies": [],
+            "testResults": [],
+            "url": "http://127.0.0.1:8000/api/note/",
+            "status": 200,
+            "statusText": "OK",
+            "contentType": "application/json",
+            "contentLength": "202 Bytes",
+            "responseTimeText": "206 ms",
+            "responseTime": 206,
+            "responseSize": 202,
+            "preScriptTime": 0,
+            "preReqTime": 1,
+            "reqTime": 234,
+            "postScriptTime": 0,
+            "chartHTML": ""
+        },
+        "requestInfo": {
+            "reqUrl": "http://127.0.0.1:8000/api/note/",
+            "headers": [
+                {
+                    "name": "accept-encoding",
+                    "value": "gzip, deflate, br"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*"
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)"
+                }
+            ]
+        }
+    }
+]

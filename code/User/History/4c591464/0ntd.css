@@ -1,0 +1,34 @@
+/*  
+    #729fcf
+    #2a6099
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+header nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header nav ul li {
+    
+}

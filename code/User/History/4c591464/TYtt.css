@@ -1,0 +1,61 @@
+/*  
+    #729fcf
+    #2a6099
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+}
+
+header nav {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+}
+
+header nav ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li {
+    width: 16.66666666666666667%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background: #729fcf;
+    cursor: pointer;
+}
+
+header nav ul li:hover, header nav ul li.active  {
+    background: #2a6099;
+}
+
+.content {
+    width: 80%;
+}

@@ -1,0 +1,377 @@
+{
+  "basics": {
+    "name": "Jolman Enrique Gonzalez Parra",
+    "headline": "Desarrollador de software",
+    "email": "jolmangonzalez5@gmail.com",
+    "phone": "3042502658",
+    "location": "Calle 129 # 11 - 12",
+    "url": {
+      "label": "",
+      "href": ""
+    },
+    "customFields": [
+      {
+        "id": "a9kt7mh90efo44u05uk1fb04",
+        "icon": "phone",
+        "name": "",
+        "value": "3028346930"
+      }
+    ],
+    "picture": {
+      "url": "",
+      "size": 64,
+      "aspectRatio": 1,
+      "borderRadius": 0,
+      "effects": {
+        "hidden": false,
+        "border": false,
+        "grayscale": false
+      }
+    }
+  },
+  "sections": {
+    "summary": {
+      "name": "Summary",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "summary",
+      "content": "<p>Desarrollador de software en formación con conocimientos sólidos en lenguajes de programación clave como C#, Java, Python y PHP. Experiencia básica en desarrollo front-end con JavaScript y dominio intermedio de bases de datos SQL. Familiarizado con la administración de servidores Linux.</p>"
+    },
+    "awards": {
+      "name": "Awards",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "awards",
+      "items": []
+    },
+    "certifications": {
+      "name": "Certifications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "certifications",
+      "items": [
+        {
+          "id": "ynf3fdnjpdhojix3bt2bqhme",
+          "visible": true,
+          "name": "Emprendimiento Innovador",
+          "issuer": "Servicio Nacional de Aprendizaje (SENA)",
+          "date": "Octubre 2014",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "education": {
+      "name": "Education",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "education",
+      "items": [
+        {
+          "id": "gjhuu184sa31jsfyzukhumhu",
+          "visible": true,
+          "institution": "Corporacion Bolivariana del Norte (CBN)",
+          "studyType": "Tecnico",
+          "area": "Desarrollo de Software y Aplicaciones Moviles",
+          "score": "",
+          "date": "Agosto 2023 - Presente",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "hnrydzmpfm6z4a5px89cbu7o",
+          "visible": true,
+          "institution": "Servicio Nacional de Aprendizaje",
+          "studyType": "Tecnologo",
+          "area": "Gestion Hotelera",
+          "score": "",
+          "date": "Julio 2013 - Septiembre 2015",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "zbnk4kf0t9067ylx6vvigdl6",
+          "visible": true,
+          "institution": "IED Pozos Colorados",
+          "studyType": "Bachiller Tecnico",
+          "area": "",
+          "score": "",
+          "date": "Febrero 2007 - Diciembre 2012",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "experience": {
+      "name": "Experience",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "experience",
+      "items": [
+        {
+          "id": "oqex9bhdgmct2sz1seq91k3j",
+          "visible": true,
+          "company": "GHL Costa Azul",
+          "position": "Mesero",
+          "location": "Km 19 Via Cienaga",
+          "date": "Diciembre 2021 - Julio 2024",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "p9yr36dtrkzwr3upon4ye8vj",
+          "visible": true,
+          "company": "Accor Mercure Hotel",
+          "position": "Mesero",
+          "location": "",
+          "date": "Octubre 2021 - Diciembre 2021",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "n2j51m0rogftpxovkh9zdbex",
+          "visible": true,
+          "company": "Hotel Marriot Resort",
+          "position": "Mesero de Banquetes",
+          "location": "",
+          "date": "Octubre 2019 - Marzo 2021",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "vsnpp4odhxgi8vkq6q9jojxx",
+          "visible": true,
+          "company": "Hotel Zuana Beach Resort",
+          "position": "Mesero",
+          "location": "",
+          "date": "Marzo 2018 - Marzo 2019",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "zrtugna369021b08c2chsplj",
+          "visible": true,
+          "company": "Hotel Casa George",
+          "position": "Administrador",
+          "location": "",
+          "date": "Mayo 2017 - Julio 2017",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "om3pro1pqji7r1b91izfqlzo",
+          "visible": true,
+          "company": "Hotel campestre La Guajira",
+          "position": "Recepcionista",
+          "location": "",
+          "date": "Diciembre 2015 - Julio 2016",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "mtwlux6wyqit12bcno30arre",
+          "visible": true,
+          "company": "Decameron Explorer",
+          "position": "Pasante",
+          "location": "",
+          "date": "Marzo 2015 - Septiembre 2015",
+          "summary": "",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "volunteer": {
+      "name": "Volunteering",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "volunteer",
+      "items": []
+    },
+    "interests": {
+      "name": "Interests",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "interests",
+      "items": []
+    },
+    "languages": {
+      "name": "Languages",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "languages",
+      "items": [
+        {
+          "id": "u6vd3svmt68kgitkf8vy1d57",
+          "visible": true,
+          "name": "Ingles",
+          "description": "",
+          "level": 2
+        }
+      ]
+    },
+    "profiles": {
+      "name": "Profiles",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "profiles",
+      "items": []
+    },
+    "projects": {
+      "name": "Projects",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "projects",
+      "items": []
+    },
+    "publications": {
+      "name": "Publications",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": false,
+      "id": "publications",
+      "items": []
+    },
+    "references": {
+      "name": "References",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "references",
+      "items": [
+        {
+          "id": "mu1p1en2zeli09kj3yyqnqww",
+          "visible": true,
+          "name": "Johan Gonzalez",
+          "description": "",
+          "summary": "<p><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"mailto:oficialcons77@gmail.com\">oficialcons77@gmail.com</a></p><p>3001099587</p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        },
+        {
+          "id": "nohk5io229r7057698o6p7wf",
+          "visible": true,
+          "name": "Arelis Parra",
+          "description": "",
+          "summary": "<p>3163987777</p><p></p>",
+          "url": {
+            "label": "",
+            "href": ""
+          }
+        }
+      ]
+    },
+    "skills": {
+      "name": "Skills",
+      "columns": 1,
+      "separateLinks": true,
+      "visible": true,
+      "id": "skills",
+      "items": []
+    },
+    "custom": {}
+  },
+  "metadata": {
+    "template": "bronzor",
+    "layout": [
+      [
+        [
+          "profiles",
+          "summary",
+          "experience",
+          "education",
+          "projects",
+          "volunteer",
+          "references"
+        ],
+        [
+          "skills",
+          "interests",
+          "certifications",
+          "awards",
+          "publications",
+          "languages"
+        ]
+      ]
+    ],
+    "css": {
+      "value": "* {\n\toutline: 1px solid #000;\n\toutline-offset: 4px;\n}",
+      "visible": false
+    },
+    "page": {
+      "margin": 18,
+      "format": "a4",
+      "options": {
+        "breakLine": true,
+        "pageNumbers": true
+      }
+    },
+    "theme": {
+      "background": "#ffffff",
+      "text": "#000000",
+      "primary": "#2563eb"
+    },
+    "typography": {
+      "font": {
+        "family": "Arial",
+        "subset": "latin",
+        "variants": [
+          "regular"
+        ],
+        "size": 14
+      },
+      "lineHeight": 1.5,
+      "hideIcons": false,
+      "underlineLinks": false
+    },
+    "notes": ""
+  }
+}
+
+
+
+Estudiante de Desarrollo de Software con conocimientos en C#, Java, Python y PHP, y conocimientos básicos en JavaScript. Apasionado por el desarrollo backend, arquitectura por capas y bases de datos SQL. Busco oportunidades para seguir aprendiendo y aplicar mis conocimientos en proyectos reales.

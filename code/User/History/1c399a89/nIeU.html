@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión y Registro</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4; }
+        .container { width: 100%; max-width: 400px; margin: auto; padding: 20px; }
+        .header { background: #333; color: white; padding: 15px; text-align: center; }
+        .form { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); }
+        .form input { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ccc; border-radius: 5px; }
+        .button { width: 100%; padding: 10px; background: #007BFF; color: white; border: none; border-radius: 5px; cursor: pointer; }
+        .toggle { text-align: center; margin-top: 10px; cursor: pointer; color: #007BFF; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Bienvenido</h1>
+    </div>
+    <div class="container">
+        <div class="form" id="login-form">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" placeholder="Usuario">
+            <input type="password" placeholder="Contraseña">
+            <button class="button">Iniciar Sesión</button>
+            <p class="toggle" onclick="toggleForm()">¿No tienes cuenta? Regístrate</p>
+        </div>
+        <div class="form" id="register-form" style="display: none;">
+            <h2>Registro</h2>
+            <input type="text" placeholder="Usuario">
+            <input type="email" placeholder="Correo electrónico">
+            <input type="password" placeholder="Contraseña">
+            <button class="button">Registrarse</button>
+            <p class="toggle" onclick="toggleForm()">¿Ya tienes cuenta? Inicia sesión</p>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            let loginForm = document.getElementById('login-form');
+            let registerForm = document.getElementById('register-form');
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

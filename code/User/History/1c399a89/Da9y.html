@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión y Registro</title>
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background: #2c3e50;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container { 
+            width: 100%; 
+            max-width: 420px; 
+            background: #34495e;
+            padding: 40px; 
+            border-radius: 12px; 
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+            text-align: center;
+            color: white;
+        }
+        .form h2 {
+            color: #ecf0f1;
+            margin-bottom: 20px;
+        }
+        .form input {
+            width: 100%; 
+            padding: 12px; 
+            margin: 10px 0; 
+            border: 1px solid #95a5a6; 
+            border-radius: 6px; 
+            font-size: 16px;
+            background: #2c3e50;
+            color: white;
+            transition: 0.3s;
+        }
+        .form input:focus {
+            border-color: #007bff;
+            background: #34495e;
+            outline: none;
+        }
+        .button {
+            width: 100%; 
+            padding: 12px; 
+            background: #007bff; 
+            color: white; 
+            border: none; 
+            border-radius: 6px; 
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background: #0056b3;
+        }
+        .toggle {
+            text-align: center; 
+            margin-top: 15px; 
+            cursor: pointer; 
+            color: #1abc9c;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form" id="login-form">
+            <h2>Iniciar Sesión</h2>
+            <input type="text" placeholder="Usuario">
+            <input type="password" placeholder="Contraseña">
+            <button class="button">Iniciar Sesión</button>
+            <p class="toggle" onclick="toggleForm()">¿No tienes cuenta? <strong>Regístrate</strong></p>
+        </div>
+        <div class="form" id="register-form" style="display: none;">
+            <h2>Registro</h2>
+            <input type="text" placeholder="Usuario">
+            <input type="email" placeholder="Correo electrónico">
+            <input type="password" placeholder="Contraseña">
+            <button class="button">Registrarse</button>
+            <p class="toggle" onclick="toggleForm()">¿Ya tienes cuenta? <strong>Inicia sesión</strong></p>
+        </div>
+    </div>
+
+    <script>
+        function toggleForm() {
+            let loginForm = document.getElementById('login-form');
+            let registerForm = document.getElementById('register-form');
+            if (loginForm.style.display === 'none') {
+                loginForm.style.display = 'block';
+                registerForm.style.display = 'none';
+            } else {
+                loginForm.style.display = 'none';
+                registerForm.style.display = 'block';
+            }
+        }
+    </script>
+</body>
+</html>

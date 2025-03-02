@@ -1,0 +1,50 @@
+{
+  "name": "[Tu Nombre]",
+  "contact": {
+    "email": "[Tu Email]",
+    "phone": "[Tu Número]",
+    "location": "[Ciudad, País]",
+    "website": "[Tu Portafolio o GitHub]",
+    "linkedin": "[Tu LinkedIn]"
+  },
+  "summary": "Estudiante de Desarrollo de Software con conocimientos en C#, Java, Python y PHP, y conocimientos básicos en JavaScript. Apasionado por el desarrollo backend, arquitectura por capas y bases de datos SQL. Busco oportunidades para seguir aprendiendo y aplicar mis conocimientos en proyectos reales.",
+  "skills": [
+    "C#",
+    "Java",
+    "Python",
+    "PHP",
+    "SQL (MySQL, PostgreSQL)",
+    "Desarrollo de API REST con Flask",
+    "Uso de Linux como entorno de desarrollo",
+    "Frameworks: PyQt6"
+  ],
+  "education": [
+    {
+      "institution": "[Nombre de tu institución]",
+      "location": "[Ciudad, País]",
+      "degree": "Desarrollo de Software",
+      "startDate": "[Año de inicio]",
+      "endDate": "Actualidad"
+    }
+  ],
+  "projects": [
+    {
+      "name": "[Nombre del Proyecto]",
+      "description": "[Breve descripción y tecnologías usadas]"
+    },
+    {
+      "name": "[Otro Proyecto]",
+      "description": "[Breve descripción y tecnologías usadas]"
+    }
+  ],
+  "languages": [
+    {
+      "name": "Español",
+      "level": "Nativo"
+    },
+    {
+      "name": "Inglés",
+      "level": "[Básico/Intermedio/Avanzado]"
+    }
+  ]
+}

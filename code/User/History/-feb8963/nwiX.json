@@ -1,0 +1,112 @@
+{
+    "basics": {
+      "name": "Jolman Enrique Gonzalez Parra",
+      "headline": "Desarrollador de software",
+      "email": "jolmangonzalez5@gmail.com",
+      "phone": "3042502658",
+      "location": "Calle 129 # 11 - 12",
+      "profiles": []
+    },
+    "summary": {
+      "summary": "Desarrollador de software en formación con conocimientos sólidos en lenguajes de programación clave como C#, Java, Python y PHP. Experiencia básica en desarrollo front-end con JavaScript y dominio intermedio de bases de datos SQL. Familiarizado con la administración de servidores Linux."
+    },
+    "experience": [
+      {
+        "company": "GHL Costa Azul",
+        "position": "Mesero",
+        "location": "Km 19 Via Cienaga",
+        "startDate": "Diciembre 2021",
+        "endDate": "Julio 2024",
+        "summary": ""
+      },
+      {
+        "company": "Accor Mercure Hotel",
+        "position": "Mesero",
+        "startDate": "Octubre 2021",
+        "endDate": "Diciembre 2021",
+        "summary": ""
+      },
+      {
+        "company": "Hotel Marriot Resort",
+        "position": "Mesero de Banquetes",
+        "startDate": "Octubre 2019",
+        "endDate": "Marzo 2021",
+        "summary": ""
+      },
+      {
+        "company": "Hotel Zuana Beach Resort",
+        "position": "Mesero",
+        "startDate": "Marzo 2018",
+        "endDate": "Marzo 2019",
+        "summary": ""
+      },
+      {
+        "company": "Hotel Casa George",
+        "position": "Administrador",
+        "startDate": "Mayo 2017",
+        "endDate": "Julio 2017",
+        "summary": ""
+      },
+      {
+        "company": "Hotel campestre La Guajira",
+        "position": "Recepcionista",
+        "startDate": "Diciembre 2015",
+        "endDate": "Julio 2016",
+        "summary": ""
+      },
+      {
+        "company": "Decameron Explorer",
+        "position": "Pasante",
+        "startDate": "Marzo 2015",
+        "endDate": "Septiembre 2015",
+        "summary": ""
+      }
+    ],
+    "education": [
+      {
+        "institution": "Corporacion Bolivariana del Norte (CBN)",
+        "area": "Desarrollo de Software y Aplicaciones Moviles",
+        "studyType": "Tecnico",
+        "startDate": "Agosto 2023",
+        "endDate": "Presente"
+      },
+      {
+        "institution": "Servicio Nacional de Aprendizaje",
+        "area": "Gestion Hotelera",
+        "studyType": "Tecnologo",
+        "startDate": "Julio 2013",
+        "endDate": "Septiembre 2015"
+      },
+      {
+        "institution": "IED Pozos Colorados",
+        "studyType": "Bachiller Tecnico",
+        "startDate": "Febrero 2007",
+        "endDate": "Diciembre 2012"
+      }
+    ],
+    "certifications": [
+      {
+        "name": "Emprendimiento Innovador",
+        "issuer": "Servicio Nacional de Aprendizaje (SENA)",
+        "date": "Octubre 2014"
+      }
+    ],
+    "languages": [
+      {
+        "language": "Ingles",
+        "fluency": "Intermedio"
+      }
+    ],
+    "references": [
+      {
+        "name": "Johan Gonzalez",
+        "contact": "oficialcons77@gmail.com",
+        "phone": "3001099587"
+      },
+      {
+        "name": "Arelis Parra",
+        "phone": "3163987777"
+      }
+    ]
+  }
+  

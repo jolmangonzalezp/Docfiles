@@ -1,0 +1,60 @@
+SOFTWARE ENGENEERING
+
+What's software:
+Set of instructions that solves a problem for the user.
+
+Types of software:
+* System: Linux,Windows, MacOS, Android, iOS
+* Application: Final user (x, WhatsApp, Blender, PhotoShop)
+* Programming: Development enviroment tools (Visual Studio, Compiler)
+* Embedded: Integrated Apps (iot, firmware, routers)
+
+What's Engeneering?
+* Science
+* Maths
+* Logics
+* Technology
+
+Why use Engeneering?
+* Design
+* Build
+* Maintanance
+    * Support
+    * Upgrades
+    * Fix bugs
+
+What's software Engeneering
+It is a discipline that combines the fundamentals necessary to solve a problem.
+
+Scalability
+It is the capacity of a software to grow with the relationship of users and transactions.
+
+Efficiency
+* Optimization
+* Performance
+* Resources
+
+Cache
+
+Security
+* Data protection
+* Privacy
+Protect the informacion through privacy technical.
+Ejemplo:
+    * Login
+    * Tokens
+    * Hashes
+    * Error detection
+
+Life Cycle (SDLC)
+1. Analysis (User needs identification)
+2. Design
+    * Define software structure
+        * Scope
+        * Stack
+3. Build
+Develop a program to implement the solution
+4. Testing
+Quality asegurance
+5. Launch
+6. Maintenance-Upgrades
