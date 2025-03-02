@@ -1,0 +1,6 @@
+[general]
+import = ["/home/jolman/.config/alacritty/neon.toml"]
+
+
+[window]
+opacity=0.75
