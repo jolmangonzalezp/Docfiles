@@ -1,6 +1,11 @@
-[general]
-import = ["/home/jolman/.config/alacritty/neon.toml"]
-
 
 [window]
-opacity=0.75
+opacity = 0.75
+padding = { x = 10, y = 10 }
+
+[font]
+normal = { family = "Monaspace Radon", style = "Regular" }
+size = 12
+
+[general]
+import = ["/home/jolman/.config/alacritty/neon.toml"]

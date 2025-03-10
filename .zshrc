@@ -101,7 +101,8 @@ plugins=(
 	)
 
 source $ZSH/oh-my-zsh.sh
-
+source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -134,6 +135,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
 alias ls="lsd"
 alias cat="bat"
+alias ct="cat"
 alias artisan="php artisan"
 alias nping="ping -c$1"
 pfetch
@@ -145,3 +147,5 @@ source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
 
 PATH=~/.console-ninja/.bin:$PATH
+
+

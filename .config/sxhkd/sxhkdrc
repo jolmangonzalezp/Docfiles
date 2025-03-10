@@ -6,11 +6,11 @@ XF86MonBrightness{Up,Down}
 
 ## Screenshots
 Print
-    maim -i $(xdotool getactivewindow) -u ~/Pictures/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png
+    maim -i $(xdotool getactivewindow) -u ~/Imágenes/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png
 super + Print
-    maim -u ~/Pictures/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png
+    maim -u ~/Imágenes/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png
 super + shift + Print
-    maim -su ~/Pictures/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png
+    maim -su ~/Imágenes/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png
 
 ## Rofi scripts
 super + space
@@ -26,7 +26,7 @@ super + Return
 super + v
     code
 super + b
-    firefox-developer-edition
+    firefox-nightly
 super + e
     pcmanfm
 super + Escape

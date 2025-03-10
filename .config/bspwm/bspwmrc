@@ -6,7 +6,7 @@ pgrep -x sxhkd || nohup sxhkd >/dev/null 2>&1 &
 # Inicia servicios necesarios
 $HOME/.config/polybar/launch.sh &
 setxkbmap latam &
-pgrep -x picom || picom &
+pgrep -x picom || picom --corner-radius 20 &
 nitrogen --restore &
 nm-applet &
 
@@ -37,7 +37,7 @@ bspc config gapless_monocle true
 
 # Reglas para ventanas específicas
 bspc rule -a Gimp desktop='^8' follow=on
-bspc rule -a firefox-developer-edition desktop='^2' follow=on state=tiling
+bspc rule -a firefoxnightly desktop='^2' follow=on state=tiling
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off

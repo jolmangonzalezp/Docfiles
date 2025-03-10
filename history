@@ -1,0 +1,661 @@
+    1  sudo pacman -Ss zsh
+    2  sudo pacman -S zsh-autocomplete zsh-autosuggestions zsh-syntax-highlighting
+    3  vim .zshrc
+    4  source ~/.zshrc
+    5  find /usr -name "zsh-autocomplete.zsh"\n
+    6  sudo find /usr -name "zsh-autocomplete.zsh"\n
+    7  El error `Permission denied` que estás viendo es normal cuando el comando `find` intenta acceder a directorios del sistema en los que no tienes permisos. Sin embargo, el comando aún debe haber encontrado los resultados relevantes si hay archivos con el nombre `zsh-autocomplete.zsh` en otros directorios. Para evitar ese error, puedes usar `sudo` para ejecutar el comando con privilegios de administrador:\n\n```bash\nsudo find /usr -name "zsh-autocomplete.zsh"\n```\n\nEsto debería permitir que el comando busque en todas las ubicaciones del sistema, incluidos los directorios que requieren privilegios elevados.\n\n### Si no encuentras el archivo\n\nSi el comando aún no encuentra los archivos correspondientes a `zsh-autocomplete.zsh`, es posible que el paquete no haya instalado los complementos correctamente, o que estos estén en una ubicación diferente a la esperada.\n\n### Opción 1: Verificar los paquetes instalados\n\nVerifica que los paquetes se hayan instalado correctamente. Puedes intentar buscar los archivos dentro de los directorios de instalación de `pacman`:\n\n```bash\npacman -Ql zsh-autocomplete\npacman -Ql zsh-autosuggestions\npacman -Ql zsh-syntax-highlighting\n```\n\nEsto te mostrará los archivos que se instalaron y las rutas exactas donde se encuentran.\n\n### Opción 2: Usar un gestor de plugins como **zinit** o **antigen**\n\nSi prefieres usar un gestor de plugins, como mencioné antes, puedes seguir los pasos para instalar **zinit** o **antigen**. Estos gestores son muy útiles porque manejan la instalación y carga de complementos de manera más sencilla.\n\nSi decides ir por este camino, te proporciono los pasos para **zinit** nuevamente:\n\n1. Instala **zinit**:\n\n   ```bash\n   curl -s https://raw.githubusercontent.com/zdharma/zinit/master/doc/install.sh | bash\n   ```\n\n2. Agrega estas líneas a tu archivo `~/.zshrc`:\n\n   ```bash\n   # Cargar Zinit\n   source "$HOME/.zinit/bin/zinit.zsh"\n\n   # Cargar los complementos\n   zinit light zsh-users/zsh-autosuggestions\n   zinit light zsh-users/zsh-syntax-highlighting\n   zinit light zsh-users/zsh-autocomplete\n   ```\n\n3. Guarda los cambios y recarga el archivo `.zshrc`:\n\n   ```bash\n   source ~/.zshrc\n   ```\n\nEsto instalará y cargará los complementos correctamente utilizando **zinit**.\n\nSi necesitas más ayuda para cualquiera de los pasos o si prefieres ot
+    8  ls /usr/share/factory/etc/audit/plugins.d
+    9  sudo ls /usr/share/factory/etc/audit/plugins.d
+   10  ls -la /usr/share/zsh/plugins/
+   11  ls -la /usr/share/zsh/plugins/zsh-autocomplete
+   12  cd  /usr/share/zsh/plugins/zsh-autocomplete
+   13  ls
+   14  pwd
+   15  nano .zshrc
+   16  source .zshrc
+   17  sudo pacman -Syyu
+   18  sudo pacman-key --recv-key 3056513887B78AEB --keyserver keyserver.ubuntu.com\nsudo pacman-key --lsign-key 3056513887B78AEB
+   19  sudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-keyring.pkg.tar.zst'\nsudo pacman -U 'https://cdn-mirror.chaotic.cx/chaotic-aur/chaotic-mirrorlist.pkg.tar.zst'
+   20  sudo vim /etc/pacman.conf
+   21  sudo pacman -Syy
+   22  sudo pacman -S firefox-developer-edition
+   23  sudo pacman -S tor
+   24  sudo systemctl enable tor\nsudo systemctl start tor
+   25  systemctl status tor\n
+   26  sudo systemctl stop tor
+   27  sudo systemctl start tor
+   28  sudo pacman -S tor-browser-bin
+   29  sudo pacman -Rns
+   30  sudo pacman -Rns firefox
+   31  xprog
+   32  sudo pacman -S wmctrl
+   33  wmctrl -l\n
+   34  sudo pacman -S xdotool\n
+   35  sudo pacman -Rns wmctrl
+   36  xdotool getactivewindow getwindowname
+   37  xdotool getmouselocation --shell
+   38  xprop
+   39  sudo pacman -S visual-studio-code-bin
+   40  sudo pacman -S pcmanfm
+   41  sudo pacman -S xrandr
+   42  sudo pacman -S xorg
+   43  sudo pacman -S nerd-font
+   44  sudo pacman -S nerd-fonts
+   45  ls /sys/class/backlight/\n
+   46  sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pipewire-audio
+   47  sudo systemctl --user enable --now pipewire
+   48  sudo systemctl --user enable --now pipewire-pulse.service
+   49  echo $DBUS_SESSION_BUS_ADDRESS\necho $XDG_RUNTIME_DIR\n
+   50  export $(dbus-launch)
+   51  dbus-launch --user\n
+   52  export DBUS_SESSION_BUS_ADDRESS=unix:path=$XDG_RUNTIME_DIR/bus\nexport XDG_RUNTIME_DIR=/run/user/$(id -u)\n
+   53  dbus-send --machine=<user>@.host --user <dbus_command>\n
+   54  dbus-send --machine=<user>@.host --user <dbus_command>
+   55  sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pipewire-audio
+   56  sudo systemctl --user enable --now pipewire
+   57  nano .zshrc
+   58  source .zshrc
+   59  sudo systemctl --user enable --now pipewire
+   60  ps aux | grep dbus\n
+   61  dbus-launch --exit-with-session\n
+   62  DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus\n
+   63  export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus\n
+   64  export XDG_RUNTIME_DIR=/run/user/$(id -u)\n
+   65  ls -ld $XDG_RUNTIME_DIR\n
+   66  systemctl --user enable --now pipewire
+   67  systemctl --user status pipewire
+   68  sudo systemctl --user enable --now pipewire-pulse.service
+   69  systemctl --user enable --now pipewire-pulse.service\n
+   70  systemctl enable pipewire
+   71  nano .zshrc
+   72  source .zshrc
+   73  systemctl --user disable --now pipewire
+   74  sudo systemctl enable --now pipewire
+   75  pacman -Qs pipewire\n
+   76  sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pipewire-audio pipe-session-manager wireplumber
+   77  sudo pacman -S pipewire pipewire-pulse pipewire-alsa pipewire-jack pipewire-audio pipewire-session-manager wireplumber
+   78  systemctl list-unit-files | grep pipewire\n
+   79  systemctl --user enable --now pipewire
+   80  systemctl --user enable --now pipewire-pulse
+   81  pactl info\n
+   82  ip link
+   83  git clone https://github.com/jolmangonzalezp/archinstall
+   84  sudo pacman -Syyu
+   85  swapon --show
+   86  blkid | grep swap\n
+   87  filefrag -v /swapfile | awk '{if(NR==4) print $4}'\n
+   88  cat /etc/fstab
+   89  sudo vim /etc/default/grub
+   90  sudo grub-mkconfig -o /boot/grub/grub.cfg
+   91  reboot
+   92  sudo pacman -S telegram-desktop
+   93  sudo nano /etc/snapper/configs/root
+   94  sudo snapper -c root set-config NUMBER_LIMIT=10
+   95  sudo snapper -c root list | awk 'NR > 10 {print $1}' | xargs -I {} sudo snapper -c root delete {}
+   96  sudo pacman -S intellij-idea-community-edition
+   97  yay -S android-studio
+   98  sudo pacman -S brightnessctl
+   99  sudo pacman -S maim
+  100  sudo pacman -S jdk-openjdk unzip wget\n
+  101  sudo pacman -S cmake ninja\n
+  102  export ANDROID_HOME=$HOME/Android/Sdk\nexport PATH=$ANDROID_HOME/emulator:$ANDROID_HOME/tools:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools:$PATH\n
+  103  source .zshrc\n
+  104  sudo pacman -S qemu-full libvirt virt-manager\nsudo systemctl enable --now libvirtd\n
+  105  grep -E "vmx|svm" /proc/cpuinfo\n
+  106  kvm-ok\n
+  107  grep -E "vmx|svm" /proc/cpuinfo\n
+  108  emulator -avd Small_Phone_API_35 -verbose\n
+  109  egrep -c '(vmx|svm)' /proc/cpuinfo\n
+  110  sudo systemctl enable --now libvirtd\n
+  111  sudo pacman -S qemu libvirt virt-manager\n
+  112  $ANDROID_HOME/emulator/emulator -avd Small_Phone_API_35 -verbose\n
+  113  sudo pacman -S libbsd\n
+  114  emulator -avd Small_Phone_API_35 -verbose\n
+  115  sudo pacman -S pycharm-community-edition
+  116  yay -S intellij-idea-ultimate-edition intellij-idea-community-edition-jre
+  117  pactl list short sinks
+  118  pactl list short sources
+  119  pactl list short sink-inputs
+  120  systemctl --user restart pipewire pipewire-pulse
+  121  pactl list short sink-inputs
+  122  pactl list short sources
+  123  systemctl --user status pipewire pipewire-pulse
+  124  systemctl --user enable --now pipewire pipewire-pulse\n
+  125  pactl suspend-sink 56 0\npactl suspend-source 57 0
+  126  sudo pacman -S acpid
+  127  sudo pacman -S alsa-firmware android-file-transfer android-tools aosp-devel bat blueman bluez-utils bridge-utils btop datagrip discord dropbox
+  128  sudo pacman -S alsa-firmware android-file-transfer android-tools bat blueman bluez-utils bridge-utils btop datagrip discord dropbox
+  129  sudo pacman -S gpart gwenview htop inkscape kate kcalc kcolorchooser libreoffice-fresh-es lsd lxappearance lxrandr maim man-pages msmtp mypy mysql nano nerdfetch net-tools network-manager-applet nitrogen nmap  okular
+  130  sudo pacman -S gpart gwenview htop inkscape kate kcalc kcolorchooser libreoffice-fresh-es lsd lxappearance lxrandr maim man-pages msmtp mypy mysql nano pfetch net-tools network-manager-applet nitrogen nmap  okular
+  131  sudo pacman -S wget xf86-video-vesa zsh-theme-powerlevel10k-git gpart gwenview htop inkscape kate kcalc kcolorchooser libreoffice-fresh-es lsd lxappearance lxrandr maim man-pages msmtp mypy mysql nano pfetch net-tools network-manager-applet nitrogen nmap  okular
+  132  sudo pacman -S reflector rofi-emoji sof-firmware steam pamixer php-apache php-fpm php-gd php-imagick phpmyadmin picom polybar postgresql ranger apache 
+  133  git clone --depth=1 https://github.com/romkatv/powerlevel10k.git ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/themes/powerlevel10k\n
+  134  nano ~/.zshrc\n
+  135  nano ~/.zshrc
+  136  source .zshrc\n
+  137  vim .config/alacritty/alacritty.toml
+  138  cat /tmp/Alacritty-99534.log
+  139  vim .config/alacritty/alacritty.toml
+  140  git clone https://github.com/githubnext/monaspace.git
+  141  mkdir -p ~/.local/share/fonts\ncd ~/.local/share/fonts\nwget https://github.com/githubnext/monaspace/releases/latest/download/Monaspace.zip\nunzip Monaspace.zip\nfc-cache -fv\n
+  142  vim .config/alacritty/alacritty.toml
+  143  cd \t~
+  144  vim .config/alacritty/alacritty.toml
+  145  fc-list | grep "Monaspace Radon"\n
+  146  git clone https://github.com/githubnext/monaspace.git
+  147  cp -r monaspace/fonts .local/share/fonts 
+  148  sudo pacman -V
+  149  pfetch
+  150  vim .config/alacritty/alacritty.toml
+  151  cat .config/alacritty/alacritty.toml
+  152  nano .config/alacritty/alacritty.toml
+  153  cat /tmp/Alacritty-99534.log
+  154  cat /tmp/Alacritty-106000.log
+  155  nano .config/alacritty/alacritty.toml
+  156  cat /tmp/Alacritty-106000.log
+  157  nano .config/alacritty/alacritty.toml
+  158  cat /tmp/Alacritty-106000.log}
+  159  cat /tmp/Alacritty-106000.log
+  160  nano .config/alacritty/alacritty.toml
+  161  cat /tmp/Alacritty-106000.log
+  162  cat /tmp/Alacritty-108211.log
+  163  alacritty migrate
+  164  cat /tmp/Alacritty-108211.log
+  165  cat /tmp/Alacritty-108599.log
+  166  nano .config/alacritty/alacritty.toml
+  167  ls
+  168  nano .config/alacritty/alacritty.toml
+  169  pfetch
+  170  nano .config/alacritty/alacritty.toml
+  171  ls -la
+  172  lsd -la
+  173  bat /tmp/Alacritty-108599.log
+  174  sudo pacman -Syyu penpot
+  175  vim .zshrc
+  176  source .zshrc\n
+  177  sudo pacman -Syyu
+  178  yay -S penpot
+  179  penpot
+  180  yay -Rns penpot
+  181  sudo pacman -S figma-linux
+  182  poweroff
+  183  setxkbmap us
+  184  sudo pacman -S apache
+  185  sudo nano /etc/httpd/conf/httpd.conf
+  186  sudo systemctl enable httpd
+  187  sudo systemctl start httpd
+  188  sudo systemctl status httpd
+  189  sudo pacman -S mysql
+  190  sudo mysql_install_db --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+  191  sudo mysqld --initialize --user=mysql --basedir=/usr --datadir=/var/lib/mysql
+  192  sudo systemctl enable mysql
+  193  sudo systemctl enable mysqld
+  194  sudo systemctl start mysqld
+  195  sudo mysql_secure_installation
+  196  sudo mysql -u root
+  197  sudo mysql -u root -p
+  198  sudo pacman -S php php-apache php-gd php-imagick
+  199  php -v
+  200  sudo nano /etc/httpd/conf/httpd.conf
+  201  sudo systemctl restart httpd
+  202  sudo nano /srv/http/info.php
+  203  sudo pacman -S phpmyadmin
+  204  sudo nano /etc/php/php.ini
+  205  sudo systemctl restart httpd
+  206  sudo nano /etc/httpd/conf/extra/phpmyadmin.conf
+  207  sudo nano /etc/httpd/conf/httpd.conf
+  208  sudo nano /etc/webapps/phpmyadmin/config.inc.php
+  209  sudo systemctl restart httpd
+  210  sudo nano /etc/webapps/phpmyadmin/config.inc.php
+  211  sudo systemctl restart httpd
+  212  sudo systemctl restart mysqld
+  213  mysql -u root -p
+  214  sudo nano /etc/apache2/sites-available/wordpress.local.conf
+  215  sudo nano /etc/httpd/conf/extra/httpd-wordpress.conf
+  216  sudo nano /etc/httpd/conf/httpd.conf
+  217  git config --global user.email "jolmangonzalez5@gmail.com"
+  218  git config --global user.name "Jolman Gonzalez"
+  219  ssh-keygen -t ed25519 -C "jolmangonzalez5@gmail.com"\n\n
+  220  cat ~/.ssh/id_ed25519.pub\n
+  221  ssh -T git@github.com
+  222  ssh -v
+  223  ssh --version
+  224  sudo pacman -S openssh
+  225  cat .ssh/myssh.pub
+  226  ssh -T git@github.com
+  227  mkdir -p Projects
+  228  sudo chown -R http:http /home/jolman/Projects
+  229  sudo chmod -R 755 /home/jolman/Projects
+  230  sudo chown -R http:http /home/jolman/Projects
+  231  sudo chmod +x /home/jolman
+  232  sudo nano /etc/httpd/conf/httpd.conf
+  233  sudo systemctl restart httpd
+  234  sudo chmod -R 755 /home/jolman/Projects
+  235  sudo chmod +x /home/jolman\n
+  236  sudo chmod +x /home/jolman
+  237  sudo chown -R http:http /home/jolman/Projects
+  238  sudo chown jolman:jolman /home/jolman/Projects
+  239  sudo usermod -aG http jolman
+  240  sudo chown -R jolman:http /home/jolman/Projects
+  241  sudo chmod -R 775 /home/jolman/Projects
+  242  source .zshrc\n
+  243  cd Projects
+  244  wget https://wordpress.org/latest.tar.gz
+  245  tar xvzf latest.tar.gz
+  246  ls
+  247  cd wordpress
+  248  chown -R root:http /home/jolman/Projects/wordpress
+  249  ls
+  250  sudo chown -R root:http /home/jolman/Projects/wordpress
+  251  cp wp-config-sample.php wp-config.php
+  252  chown -R root:http /home/jolman/Projects/wordpress
+  253  chown -R jolman:http /home/jolman/Projects/wordpress
+  254  sudo chown -R jolman:http /home/jolman/Projects/wordpress
+  255  cp wp-config-sample.php wp-config.php
+  256  nano wp-config.php
+  257  sudo nano /etc/httpd/conf/extra/httpd-wordpress.conf
+  258  sudo pacman -S php php-apache php-gd php-intl php-mysqli php-curl php-zip\n
+  259  sudo pacman -S php-fpm\nsudo systemctl enable --now php-fpm\n
+  260  cd /home/jolman/Projects\nwget https://wordpress.org/latest.tar.gz\ntar -xvzf latest.tar.gz\nrm latest.tar.gz\n
+  261  sudo chown -R http:http /home/jolman/Projects/wordpress  # Apache
+  262  sudo chmod -R 755 /home/jolman/Projects/wordpress
+  263  DocumentRoot "/srv/http"\n
+  264  sudo nano /etc/httpd/conf/httpd.conf\n
+  265  ls -l /home/jolman/Projects/wordpress\n
+  266  sudo nano /etc/httpd/conf/httpd.conf\n
+  267  sudo systemctl restart httpd
+  268  git clone git@github.com:jolmangonzalezp/CandyBagGirls.git
+  269  ls -l ~/.ssh\n
+  270  ssh-keygen -t ed25519 -C "jolmangonzalez5@gmail.com"\n
+  271  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_rsa\n
+  272  ssh-keygen -t rsa -b 4096 -C "jolmangonzalez5@gmail.com"\n\n
+  273  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_rsa\n
+  274  cat ~/.ssh/id_rsa.pub\n
+  275  cd ~/.ssh
+  276  ls
+  277  ssh-keygen -t rsa -b 4096 -C "jolmangonzalez5@gmail.com"\n\n
+  278  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_rsa\n
+  279  cat ~/.ssh/id_rsa.pub\n
+  280  ls
+  281  ssh-add archlinux.pub
+  282  ssh-keygen -t ed25519 -C "tu_email@ejemplo.com"
+  283  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_ed25519
+  284  ssh-add archlinux
+  285  cat archlinux
+  286  cat archlinux.pub
+  287  cd ~
+  288  nano .zshrc
+  289  source .zshrc\n
+  290  cat .ssh/archlinux.pub
+  291  cat .ssh/archlinux.pub > ssh
+  292  nano ssh
+  293  code ssh
+  294  cd Projects
+  295  ssh -T git@github.com
+  296  git clone git@github.com:jolmangonzalezp/CandyBagGirls.git\n
+  297  ls
+  298  rm arch*
+  299  ls
+  300  rm Arch*
+  301  ls
+  302  clear
+  303  poweroff
+  304  
+  305  nmtui
+  306  cd Projects
+  307  git clone git@github.com:jolmangonzalezp/CMS_2.git
+  308  ssh -T git@github.com
+  309  cat ~/.ssh/archlinux.pub
+  310  ssh-add ~/.ssh/archlinux
+  311  ls
+  312  ls ~/.ssh/
+  313  ssh-add ~/.ssh/id_ed25519
+  314  ls ~/.ssh/archlinux
+  315  ssh-add ~/.ssh/archlinux
+  316  eval "$(ssh-agent -s)"
+  317  ssh-add ~/.ssh/archlinux\n
+  318  ssh-add ~/.ssh/archlinux
+  319  ssh -T git@github.com
+  320  git clone git@github.com:jolmangonzalezp/CMS_2.git
+  321  nano ~/.zshrc\n
+  322  source ~/.zshrc
+  323  ls
+  324  cd CMS_2
+  325  ..
+  326  cd CandyBagGirls
+  327  ..
+  328  code CandyBagGirls
+  329  cd CMS_2
+  330  git add .
+  331  git commit -m "add files"
+  332  git origin main push
+  333  git push origin main
+  334  ssh -T git@github.com
+  335  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/id_ed25519
+  336  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/archlinux
+  337  git push origin main
+  338  git add .
+  339  git commit -m "add icons"
+  340  git push origin main
+  341  git add .
+  342  git commit -m "add form"
+  343  git push origin main
+  344  setxkbmap us
+  345  setxkbmap latam
+  346  composer require phpmailer/phpmailer\n
+  347  sudo pacman -Syyu composer
+  348  composer require phpmailer/phpmailer\n
+  349  telnet smtp.office365.com 587
+  350  sudo pacman -S inetutils\n
+  351  telnet smtp.office365.com 587
+  352  tail -f /var/log/mail.log   # En sistemas Linux con Postfix/Exim\ntail -f /var/log/apache2/error.log  # Si usas Apache\ntail -f /var/log/php_errors.log  # Si PHP tiene logs activados\n
+  353  which sendmail\n
+  354  sudo pacman -S postfix\n
+  355  sudo systemctl start --now postfix\n
+  356  eval "$(ssh-agent -s)"\nssh-add ~/.ssh/archlinux
+  357  git add .
+  358  cd Projects/CMS_2
+  359  git add .
+  360  git commit -m "end"
+  361  git push origin main
+  362  poweroff
+  363  sudo pacman -yyu
+  364  sudo pacman -Syyu
+  365  yay -S vmware-workstation
+  366  sudo pacman -S maim
+  367  cd Documents
+  368  ls
+  369  vim Software\ Engeneering
+  370  sudo pacman -Ss firefox
+  371  poweroff
+  372  sudo pacman -Syyu
+  373  sudo modprobe vmmon\nsudo modprobe vmnet\n
+  374  sudo tee /etc/modules-load.d/vmware.conf <<EOF\nvmmon\nvmnet\nEOF\n
+  375  sudo tee /etc/modules-load.d/vmware.conf << vmmon\n
+  376  sudo tee /etc/modules-load.d/vmware.conf <<EOF\nvmmon\nvmnet\nEOF\n
+  377  sudo systemctl enable --now vmware-networks.service\nsudo systemctl enable --now vmware-usbarbitrator.service\nsudo systemctl enable --now vmware-hostd.service\n
+  378  sudo usermod -aG vboxusers $USER\n
+  379  lsblk\n
+  380  sudo pacman -S usbutils\n
+  381  lsusb\n
+  382  sudo pacman -S exfat-utils exfatprogs\n
+  383  sudo pacman -S gvfs
+  384  sudo pacman -Ss gvfs
+  385  sudo pacman -Ss gvfs-
+  386  setxkbmap us
+  387  sudo pacman -Ss gvfs
+  388  sudo pacman -S gvfs-{afc,dnssd,goa,google,gphoto2,mtp,nfs,smb,wsdd}
+  389  sudo pacman -Ss fs
+  390  picom
+  391  picom --diagnostics\n
+  392  picom &\n
+  393  sudo pacman -Syyu
+  394  curl -O https://blackarch.org/strap.sh\nchmod +x strap.sh\nsudo ./strap.sh\nsudo pacman -Syyu
+  395  maim -su ~/Imágenes/screenshot-$(date +'%Y-%m-%d_%H-%M-%S').png
+  396  vim Documents/Degree\ Work
+  397  setxkbmap us
+  398  setxkbmap latam
+  399  setxkbmap us
+  400  cd Documents
+  401  touch 07-03-2025
+  402  vim 07-03-2025
+  403  sudo pacman -Syyu
+  404  yay -S anbox anbox-image
+  405  *
+  406  sudo pacman -S yay
+  407  pacman -Q linux-headers\n
+  408  pacman -Q linux\n
+  409  pacman -Q linux
+  410  pacman -Qs linux
+  411  yay -S anbox anbox-image
+  412  sudo pacman -S steam\nyay -S protonup-qt
+  413  sudo pacman -S lutris
+  414  yay -Ss anbox\n
+  415  sudo pacman -S anbox
+  416  sudo pacman -S Anbox
+  417  sudo pacman -S lutris wine wine-mono wine-gecko winetricks\n
+  418  sudo pacman -S lib32-gnutls lib32-libldap lib32-libpng lib32-vulkan-icd-loader
+  419  sudo pacman -S bottles
+  420  sudo pacman -S garuda-gamer\nsudo pacman -S linux-zen-garuda
+  421  sudo nano /etc/pacman.conf
+  422  sudo pacman-key --recv-keys 5DE3E0509C47EA3CF04A42D34AEE18F83AFDEB23\nsudo pacman-key --lsign-key 5DE3E0509C47EA3CF04A42D34AEE18F83AFDEB23
+  423  sudo pacman -Syu
+  424  sudo rm /var/lib/pacman/sync/garuda.db
+  425  sudo pacman -Syy
+  426  sudo pacman-key --refresh-keys
+  427  sudo pacman -Syyu
+  428  sudo rm /var/lib/pacman/sync/garuda.db
+  429  sudo pacman -Syy
+  430  sudo pacman -Syyu anbox
+  431  sudo nano /etc/pacman.conf
+  432  sudo rm /var/lib/pacman/sync/garuda.db
+  433  sudo pacman -Syyu
+  434  curl https://garudalinux.org/repo/$arch
+  435  $ sudo pacman -S openssl rust godot
+  436  sudo pacman -S openssl rust godot
+  437  sudo pacman -S openssl godot
+  438  curl https://geo-mirror.garudalinux.org/repos/chaotic-aur/$arch
+  439  vim .zshrc
+  440  source .zshrc
+  441  vim .zshrc
+  442  source .zshrc
+  443  vim .zshrc
+  444  source .zshrc
+  445  vim .zshrc.bkp
+  446  vim .zshrc
+  447  https://es.aliexpress.com/item/1005002073792913.html\?spm\=a2g0o.productlist.main.50.1244Ku7sKu7s54\&algo_pvid\=eecb0ebd-8f80-4952-94a1-23dca7cf7f0b\&algo_exp_id\=eecb0ebd-8f80-4952-94a1-23dca7cf7f0b-49\&pdp_ext_f\=%7B%22order%22%3A%222%22%2C%22eval%22%3A%221%22%7D\&pdp_npi\=4%40dis%21COP%21104113.30%2162459.61%21%21%2124.87%2114.92%21%402101efeb17414150056274306e2afd%2112000018647623206%21sea%21CO%210%21ABX\&curPageLogUid\=MVhXLhIvVazz\&utparam-url\=scene%3Asearch%7Cquery_from%3A\&_gl\=1\*1tcnu85\*_gcl_au\*NjM3OTE0MTY3LjE3NDEzNzA1NjI.\*_ga\*ODM2MjMwODcxLjE3NDEzNzA1NjM.\*_ga_VED1YSGNC7\*MTc0MTQxNDU1NS4zLjEuMTc0MTQxNTAwMy4zMS4wLjA.
+  448  ct .zshrc.bkp
+  449  vim .zshrc
+  450  source .zshrc
+  451  sudo systemctl enable sshd\nsudo systemctl start sshd\n
+  452  vim ~/.config/systemd/user/sshd.service
+  453  systemctl --user enable sshd\nsystemctl --user start sshd
+  454  pgrep sshd && echo "SSH está corriendo" || echo "SSH no está activo"
+  455  reboot
+  456  pgrep sshd && echo "SSH está corriendo" || echo "SSH no está activo"
+  457  vim .zshrc
+  458  sudo pacman -S hyprland
+  459  sudo pacman -S wayland wlroots xdg-desktop-portal-hyprland hyprpaper hyprlock hypridle\n
+  460  mkdir -p ~/.config/hypr\ncp /usr/share/hyprland/hyprland.conf ~/.config/hypr/hyprland.conf
+  461  pacman -Qs hyprland\n
+  462  mkdir -p ~/.config/hypr\ncurl -o ~/.config/hypr/hyprland.conf https://raw.githubusercontent.com/hyprwm/Hyprland/main/example/hyprland.conf
+  463  vim .config/hypr/hyprland.conf
+  464  vim .config/sxhkd/sxhkdrc
+  465  yay -S xwaylandvideobridge
+  466  xwaylandvideobridge &
+  467  vim .config/hypr/hyprland.conf
+  468  xwaylandvideobridge
+  469  pkill discord 
+  470  kill discord 
+  471  discord
+  472  kill discord 
+  473  pkill discord 
+  474  sudo pacman -S waybar
+  475  echo $XDG_SESSION_TYPE\n
+  476  sudo pacman -S xorg-xwayland
+  477  WAYLAND_DISPLAY=wayland-1 xwaylandvideobridge
+  478  sudo pacman -S obs-studio
+  479  xwaylandvideobridge
+  480  env XDG_SESSION_TYPE=x11 discord
+  481  yay -S betterdiscord-installer
+  482  vim .config/hypr/hyprland.conf
+  483  sudo pacman -S xf86-video-amdgp
+  484  sudo pacman -S xf86-video-amdgpu
+  485  sudo pacman -S xorg-xrandr
+  486  xrandr
+  487  vim .config/hypr/hyprland.conf
+  488  sudo pacman -S wdisplays
+  489  hyprctl logs
+  490  xwaylandvideobridge
+  491  yay -S webcord
+  492  sudo pacman -S ydotool
+  493  discord
+  494  sudo pacman -S xdg-utils
+  495  sudo pacman -S xdg-desktop-portal xdg-desktop-portal-wlr
+  496  systemctl --user status dbus
+  497  xwaylandvideobridge
+  498  vim cd docfiles/shellHistory
+  499  discord --enable-features=UseOzonePlatform --ozone-platform=x11
+  500  sudo pacman -S xdg-desktop-portal-hyprland
+  501  systemctl --user restart xdg-desktop-portal xdg-desktop-portal-hyprland
+  502  git clone https://github.com/Vencord/Vesktop\ncd Vesktop\npnpm i\npnpm start\npnpm package\npnpm package --linux pacman\npnpm package:dir
+  503  sudo pacman -S pnpm
+  504  pnpm i\npnpm start\npnpm package\npnpm package --linux pacman\npnpm package:dir
+  505  /usr/bin/discord --enable-features=UseOzonePlatform --ozone-platform=wayland
+  506  sudo nano /usr/share/applications/discord.desktop
+  507  sudo vim /usr/share/applications/discord.desktop
+  508  gtk-update-icon-cache
+  509  cp /usr/share/applications/discord.desktop docfiles/
+  510  sudo pacman -Rns xwaylandvideobridge
+  511  yay -Rns betterdiscord-installer
+  512  pamcan -Q Vesktop
+  513  pacman -Q Vesktop
+  514  sudo pacman -Rns webcord
+  515  echo  $XDG_SESSION_TYPE\n
+  516  ls /dev | grep "binder"
+  517  ls /dev/ | grep "binder"
+  518  su
+  519  sudo pacman -S lxc python-gbinder
+  520  sudo systemctl enable --now waydroid-container.service
+  521  sudo systemctl restart waydroid-container.service
+  522  sudo waydroid init -s GAPPS
+  523  cd Documents}
+  524  cd Documents
+  525  sudo pacman -S qt6
+  526  sudo pacman -S qt5
+  527  waydroid session start
+  528  waydroid show-full-ui\n
+  529  waydroid session start
+  530  waydroid show-full-ui\n
+  531  sudo systemctl restart waydroid-container
+  532  sudo waydroid prop set persist.waydroid.egl_mode drm\n
+  533  waydroid session start
+  534  waydroid session start &
+  535  sudo waydroid prop set persist.waydroid.multi_windows true\nsudo systemctl restart waydroid-container\n
+  536  sudo systemctl stop waydroid-container.service\nsudo systemctl disable waydroid-container.service
+  537  sudo pacman -Rns waydroid lxc python-gbinder\n
+  538  sudo rm -rf /var/lib/waydroid\nrm -rf ~/.local/share/waydroid
+  539  sudo rm -rf /var/lib/waydroid\nsudo rm -rf ~/.local/share/waydroid
+  540  sudo rm -rf /usr/lib/systemd/system/waydroid-container.service\nsudo rm -rf /usr/bin/waydroid\nsudo rm -rf /etc/waydroid
+  541  reboot
+  542  sudo pacman -Syyu
+  543  sudo rm -rf /var/lib/waydroid\nsudo rm -rf ~/.local/share/waydroid\nsudo rm -rf ~/.waydroid\nsudo rm -rf ~/.config/waydroid\nsudo rm -rf /usr/share/waydroid\nsudo rm -rf /etc/waydroid
+  544  sudo rm -rf ~/.local/share/anbox\nsudo rm -rf /var/lib/anbox
+  545  sudo systemctl disable --now waydroid-container.service\nsudo rm -rf /etc/systemd/system/waydroid-container.service
+  546  sudo systemctl disable --now anbox-container-manager.service\nsudo rm -rf /etc/systemd/system/anbox-container-manager.service
+  547  sudo pacman -Rns $(pacman -Qdtq)\nsudo pacman -Scc
+  548  sudo rm -rf /var/lib/lxc\nsudo rm -rf /var/lib/lxd
+  549  find / -name "*waydroid*" 2>/dev/null\nfind / -name "*anbox*" 2>/dev/null
+  550  /home/jolman/.local/share/applications/waydroid.*
+  551  setxkbmap latam
+  552  rm -rf /home/jolman/.local/share/applications/waydroid.com.android.calculator2.desktop /home/jolman/.local/share/applications/waydroid.com.android.camera2.desktop /home/jolman/.local/share/applications/waydroid.com.android.contacts.desktop /home/jolman/.local/share/applications/waydroid.com.android.deskclock.desktop /home/jolman/.local/share/applications/waydroid.com.android.documentsui.desktop /home/jolman/.local/share/applications/waydroid.com.android.gallery3d.desktop /home/jolman/.local/share/applications/waydroid.com.android.inputmethod.latin.desktop /home/jolman/.local/share/applications/waydroid.com.android.settings.desktop /home/jolman/.local/share/applications/waydroid.com.android.vending.desktop /home/jolman/.local/share/applications/waydroid.org.lineageos.eleven.desktop /home/jolman/.local/share/applications/waydroid.org.lineageos.etar.desktop /home/jolman/.local/share/applications/waydroid.org.lineageos.jelly.desktop /home/jolman/.local/share/applications/waydroid.org.lineageos.recorder.desktop 
+  553  sudo rm -rf /var/lib/misc/dnsmasq.waydroid0.leases /usr/lib/waydroid /var/cache/pacman/pkg/waydroid-1.4.3-1.1-any.pkg.tar.zst /var/cache/pacman/pkg/waydroid-1.4.3-1.1-any.pkg.tar.zst.sig 
+  554  yay -S swww
+  555  poweroff
+  556  sudo pacman -Rns hyprpaper
+  557  sudo pacman -S waypaper
+  558  swww-daemon
+  559  cd .config
+  560  sudo pacman -S ranger
+  561  mkdir waybar
+  562  cd waybar
+  563  sudo pacman -S otf-font-awesome ttf-arimo-nerd noto-fonts
+  564  mkdir -p ~/.config/waybar\ncp /etc/xdg/waybar/* ~/.config/waybar/
+  565  wlogout --protocol layer-shell
+  566  sudo pacman -S wlogout
+  567  wlogout --protocol layer-shell
+  568  mkdir -p ~/.config/wlogout\n\ncp /etc/wlogout/layout ~/.config/wlogout/
+  569  find ~/.local/share/applications /usr/share/applications -name "*waydroid*"\n
+  570  sudo find ~/.local/share/applications /usr/share/applications -name "*waydroid*"\n[200~rm -f ~/.local/share/applications/waydroid-session.desktop
+  571  sudo rm -f /usr/share/applications/waydroid-session.desktop
+  572  sudo rm -f ~/.local/share/applications/waydroid-session.desktop\nsudo rm -f /usr/share/applications/waydroid-session.desktop\n
+  573  sudo rm -f ~/.local/share/applications/waydroid-session.d\nsudo rm -f /usr/share/applications/waydroid-session.desktop\n
+  574  gtk-update-icon-cache\nupdate-desktop-database ~/.local/share/applications\nupdate-desktop-database /usr/share/applications
+  575  gtk-update-icon-cache\nsudo update-desktop-database ~/.local/share/applications\nupdate-desktop-database /usr/share/applications
+  576  gtk-update-icon-cache\nsudo update-desktop-database ~/.local/share/applications\nsudo update-desktop-database /usr/share/applications
+  577  killall rofi\nrofi -show drun
+  578  pcmanfm
+  579  ls
+  580  waybar
+  581  killall waybar && waybar &
+  582  sudo pacman -S pavucontrol
+  583  sudo pacman -Syyu
+  584  killall waybar && waybar &
+  585  waybar &
+  586  killall waybar && waybar &
+  587  sudo killall waybar && waybar &OA
+  588  sudo killall waybar && waybar &
+  589  sudo pacman -S hybrid-bar
+  590  yay -S hybrid-bar
+  591  killall waybar
+  592  hybrid-bar
+  593  yay -Rns hybrid-bar
+  594  sudo pacman -Rns hybrid-bar
+  595  sudo pacman -Rns hybrid-bar-debug
+  596  waybar &
+  597  sudo killall waybar && waybar &
+  598  cp /etc/xdg/waybar/ ~/.config/waybar/
+  599  cp -r /etc/xdg/waybar/  ~/.config/waybar/
+  600  sudo killall waybar && waybar &
+  601  ip link
+  602  sudo killall waybar && waybar &
+  603  waybar &
+  604  sudo killall waybar && waybar &
+  605  waybar &
+  606  sudo killall waybar && waybar &
+  607  waybar &
+  608  sudo killall waybar && waybar &
+  609  hyprctl devices\n
+  610  hyprctl switchxkblayout at-translated-set-2-keyboard next
+  611  sudo killall waybar && waybar &
+  612  hyprctl switchxkblayout at-translated-set-2-keyboard next
+  613  sudo killall waybar && waybar &
+  614  waybar &
+  615  sudo killall waybar && waybar &
+  616  WAYBAR_DEBUG=1 waybar
+  617  sudo killall waybar && waybar &
+  618  waybar &
+  619  sudo killall waybar && waybar &
+  620  waybar &
+  621  sudo killall waybar && waybar &
+  622  pacman_packages
+  623  checkupdates | wc -l
+  624  sudo killall waybar && waybar &
+  625  waybar &
+  626  sudo killall waybar && waybar &
+  627  waybar &
+  628  sudo killall waybar && waybar &
+  629  waybar &
+  630  sudo killall waybar && waybar &
+  631  waybar &
+  632  sudo killall waybar && waybar &
+  633  sudo pacman -S wireplumber
+  634  sudo killall waybar && waybar &
+  635  free -h | awk '/Swap/ {print $3}'
+  636  free -h | awk '/Swap/ '
+  637  free -m | awk '/Swap/ {printf \"%.1f\", $3/1024}'
+  638  free -m | awk '/Swap/ {printf "%.1f", $3/1024}'\n
+  639  sudo killall waybar && waybar &
+  640  wpctl get-volume 49 | awk '{print ($2 == 0 ? \"🔇\" : int($2 * 100))}'
+  641  wpctl get-volume 49 | awk '{print ($2 == 0 ? "🔇" : int($2 * 100))}'\n
+  642  wpctl get-volume 49 | awk '{print ($2 == 0 ? "🔇" : int($2 * 100))}'wpctl\n
+  643  wpctl
+  644  wpctl get-volume 49 | awk '{print ($2 == 0 ? "🔇" : int($2 * 100))}'\n
+  645  wpctl get-volume 49 | awk '{print ($2 == 0 ? "🔇" : int($2 * 100))}'
+  646  wpctl get-volume
+  647  wpctl 
+  648  wpctl get-volume 49
+  649  wpctl status
+  650  wpctl get-volume 47
+  651  wpctl get-volume 48
+  652  wpctl get-volume 986
+  653  wpctl set-default 42
+  654  sudo killall waybar && waybar &
+  655  waybar &
+  656  sudo killall waybar && waybar &
+  657  checkupdates | wc -l
+  658  sudo killall waybar && waybar &
+  659  yay -Su
+  660  sudo pacman -Su
+  661  sudo killall waybar && waybar &
